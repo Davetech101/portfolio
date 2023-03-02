@@ -9,9 +9,9 @@ const Navbar = () => {
                 <h2 className="text-3xl font-bold underline text-red dark:text-blue">David Enomah</h2>
             </Link>
 
-            <div className="">
-                <nav>
-                <ul>
+            <div className="flex items-center justify-between">
+                <nav >
+                <ul className="flex items-center justify-between">
                     <li>
                         <Link href="/portfolio">Portfolio</Link>
                     </li>
