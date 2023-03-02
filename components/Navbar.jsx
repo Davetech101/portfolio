@@ -4,12 +4,13 @@ import { HiLightBulb } from 'react-icons/hi';
 const Navbar = () => {
   return (
     <>
-        <header>
+        <header className="dark:text-white flex items-center justify-between">
             <Link href="/">
                 <h2 className="text-3xl font-bold underline text-red dark:text-blue">David Enomah</h2>
             </Link>
 
-            <nav>
+            <div className="">
+                <nav>
                 <ul>
                     <li>
                         <Link href="/portfolio">Portfolio</Link>
@@ -26,6 +27,7 @@ const Navbar = () => {
             <button>
                 <HiLightBulb/>
             </button>
+            </div>
         </header>
     </>
   )
