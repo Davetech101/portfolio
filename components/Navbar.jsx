@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
         <header>
             <Link href="/">
-                <h2>David Enomah</h2>
+                <h2 className="text-3xl font-bold underline text-red dark:text-blue">David Enomah</h2>
             </Link>
 
             <nav>
