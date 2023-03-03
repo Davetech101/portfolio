@@ -13,7 +13,7 @@ module.exports = {
       'blue': '#243c5a',
       'red': '#FF0000',
       'black': "#000",
-      'border': "rgba(255,255,255,.2)",
+      'white-2': "#d9d9d9",
     }},
   },
   plugins: [],
