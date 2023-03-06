@@ -48,7 +48,7 @@ const Connect = () => {
           >
             {medium.name}
           </span>
-          <span>{medium.svg}</span>{" "}
+          <span className="hover:text-white-2">{medium.svg}</span>{" "}
         </Link>
       ))}
     </div>
