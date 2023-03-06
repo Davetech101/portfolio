@@ -43,7 +43,7 @@ const Connect = () => {
         >
           <span
             className={`text-2xl text-white-2 ${
-              hover === idx ? "translate-x-0" : "translate-x-40"
+              hover === idx ? "translate-x-0" : "translate-x-10 opacity-0 invisible"
             } transition-all`}
           >
             {medium.name}
