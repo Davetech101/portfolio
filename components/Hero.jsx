@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CgArrowLongRight } from "react-icons/cg"
 
 const Hero = () => {
   return (
@@ -17,8 +18,10 @@ const Hero = () => {
           software products.
         </p>
 
-        <Link href="/portfolio" className="uppercase mt-5 block text-2xl">
+        <Link href="/portfolio" className="uppercase flex items-center gap-10 mt-5 block text-2xl">
           my portfolio
+
+          <CgArrowLongRight className="text-6xl"/>
         </Link>
       </main>
     </div>
