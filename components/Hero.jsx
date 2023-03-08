@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { CgArrowLongRight } from "react-icons/cg"
+import Cube from "./Cube";
 
 const Hero = () => {
   return (
-    <div className="absolute top-2/4 -translate-y-3/4 max-w-4xl p-20">
+    <div className="absolute top-2/4 -translate-y-3/4 max-w-4xl p-20 flex justify-between items-center w-full">
       <main className="relative">
         <div className="absolute w-0.5 h-32 bg-purple mb-5 -top-16 -left-7"></div>
         <div className="absolute h-0.5 w-32 bg-purple mb-5 -top-7 -left-16"></div>
@@ -24,6 +25,8 @@ const Hero = () => {
           <CgArrowLongRight className="text-6xl"/>
         </Link>
       </main>
+
+      {/* <Cube/> */}
     </div>
   );
 };
