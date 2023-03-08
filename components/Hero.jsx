@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CgArrowLongRight } from "react-icons/cg"
-import Cube from "./Cube";
+// import Cube from "./Cube";
+import P from "./P"
 
 const Hero = () => {
   return (
@@ -13,11 +14,11 @@ const Hero = () => {
           i am a{" "}
           <span className="text-purple underline">frontend developer</span>
         </p>
-        <p className="text-3xl text-white-2 font-normal">
+        <P className="text-3xl text-white-2">
           I am a well-versed and creative developer who is passionate about
           creating and contributing to beautiful, interactive and performant
           software products.
-        </p>
+        </P>
 
         <Link href="/portfolio" className="uppercase flex items-center gap-10 mt-5 block text-2xl">
           my portfolio
