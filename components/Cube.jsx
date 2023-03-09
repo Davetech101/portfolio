@@ -63,7 +63,7 @@ function Bulb(props) {
 
 function Cube() {
   return (
-    <div style={{ height: "100vh", width: "100vw" }}>
+    <div className="h-full w-full">
       <Canvas
         shadows={{ type: "BasicShadowMap" }}
         style={{ background: "black" }}
@@ -71,9 +71,9 @@ function Cube() {
       >
         {/* <fog attach="fog" args={["white", 1, 10]} /> */}
         <ambientLight intensity={0.2} />
-        <Bulb position={[0, 3, 0]} />
+        {/* <Bulb position={[0, 3, 0]} /> */}
         <pointLight />
-        <Box position={[0, 1, 0]} />
+        <Box position={[0, 0, 0]} />
         <Orit />
         {/* <axesHelper args={[5]} /> */}
         {/* <Floor position={[0, -0.5, 0]} /> */}
