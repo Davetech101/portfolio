@@ -17,6 +17,7 @@
   background: transparent;
   border: none;
   text-decoration: none;
+  font-family: inherit;
 }
 
 html{
