@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CgArrowLongRight } from "react-icons/cg"
+import Clock from "./Clock";
 // import Cube from "./Cube";
 import P from "./P"
 
@@ -27,7 +28,7 @@ const Hero = () => {
         </Link>
       </main>
 
-      {/* <Cube/> */}
+      <Clock/>
     </div>
   );
 };
