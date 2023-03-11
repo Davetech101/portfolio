@@ -4,12 +4,12 @@ import { HiLightBulb } from "react-icons/hi";
 const Navbar = () => {
   const navLinks = [
     {
-      title: "Portfolio",
-      href: "portfolio",
-    },
-    {
       title: "About Me",
       href: "about",
+    },
+    {
+      title: "Portfolio",
+      href: "portfolio",
     },
     {
       title: "Contact me",
