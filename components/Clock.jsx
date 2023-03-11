@@ -23,6 +23,7 @@ export default class Clock extends Component {
   render() {
     return (
       <div className="container">
+        <div className="rotate"></div>
         <div className="clock">
         <div
           className="hour_hand"
