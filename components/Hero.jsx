@@ -2,6 +2,11 @@ import StyledHero from "@/styles/styledcomponents/StyledHero";
 import Link from "next/link";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import Typewriter from "typewriter-effect";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { ImQrcode } from "react-icons/im";
+import { FaCarSide } from "react-icons/fa";
+import { HiOutlineWifi } from "react-icons/hi";
 
 const Hero = () => {
   const skills = [
@@ -54,32 +59,71 @@ const Hero = () => {
       img: "/assets/github.png",
     },
   ];
+
+  const { text } = useTypewriter({
+    words: ["frontend developer", "software engineer", "boy"],
+    loop: {},
+    typeSpeed: 120,
+  });
   return (
     <StyledHero>
+      <ImQrcode className="code" />
+      <HiOutlineWifi className="wifi"/>
+
       <main className="relative">
-        <div className="absolute w-0.5 h-60 bg-orange mb-5 -top-20 -left-7"></div>
-        <div className="absolute h-0.5 w-60 bg-orange mb-5 -top-7 -left-20"></div>
+        <span className="po flex">{"<p>"}</span>
+
+        <span className="absolute w-0.5 h-60 bg-orange mb-5 -top-20 -left-7 vertical"></span>
+        <span className="absolute h-0.5 w-60 bg-orange mb-5 -top-7 -left-20 horizontal"></span>
+        <p className="inline mr-5">I am a</p>
+        <Typewriter
+          className="text-orange hidden"
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("tech bro")
+              .deleteAll()
+              .typeString("Ftonrrnd")
+              .deleteAll()
+              .typeString("frontend developer")
+              .start();
+          }}
+        />
         <p>
-          {" "}
-          I am a{" "}
-          <span className="text-orange underline fd">frontend developer</span>
+          <span className="span">A</span>{" "}
+          <span className="span underline">well-versed</span>{" "}
+          <span className="span">and</span>{" "}
+          <span className="span underline">creative</span>{" "}
+          <span className="span">developer</span>{" "}
+          <span className="span">who</span> <span className="span">is</span>{" "}
+          <span className="span">passionate</span>{" "}
+          <span className="span">about</span>{" "}
+          <span className="span">creating</span>{" "}
+          <span className="span">and</span>{" "}
+          <span className="span">contributing</span>{" "}
+          <span className="span">to</span>{" "}
+          <span className="span underline">beautiful</span>
+          <span className="span">,</span>{" "}
+          <span className="span underline">interactive</span>{" "}
+          <span className="span">and</span>{" "}
+          <span className="span underline">performant</span>{" "}
+          <span className="span">software</span>{" "}
+          <span className="span">products</span>
+          <span className="span">.</span>{" "}
         </p>
-        <p>
-          A well-versed and creative developer who is passionate about creating
-          and contributing to beautiful, interactive and performant software
-          products.
-        </p>
+        <span className="pe">{"</p>"}</span>
+
+        <FaCarSide className="car" />
       </main>
 
-      <Marquee className="marquee-1">
+      <Marquee
+        className="marquee-1"
+        speed="50"
+        pauseOnHover="true"
+        gradientColor={[0, 0, 0]}
+        gradientWidth={100}
+      >
         {skills.map((skill) => (
-          <Image
-            key={skill.name}
-            src={skill.img}
-            alt={skill.name}
-            width={50}
-            height={50}
-          />
+          <li key={skill.name}>{skill.name}</li>
         ))}
       </Marquee>
     </StyledHero>
