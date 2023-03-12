@@ -4,6 +4,7 @@ import { BsGithub } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { TbFileDownload } from "react-icons/tb";
 import { useState } from "react";
+import StyledConnect from "@/styles/styledcomponents/StyledConnect";
 
 const Connect = () => {
   const [hover, setHover] = useState(null);
@@ -30,28 +31,17 @@ const Connect = () => {
       svg: <TbFileDownload />,
     },
   ];
-  const yes = "TbFileDownload";
+
   return (
-    <div className="absolute bottom-10 right-10 flex flex-col gap-10 items-end">
+    <StyledConnect>
       {media.map((medium, idx) => (
         <Link
           key={idx}
           href={medium.href}
-          className="text-white text-4xl flex items-center gap-4"
-          onMouseEnter={() => setHover(idx)}
-          onMouseLeave={() => setHover(null)}
-        >
-          <span
-            className={`text-2xl text-white-2 ${
-              hover === idx ? "translate-x-0" : "translate-x-10 opacity-0 invisible"
-            } transition-all`}
-          >
-            {medium.name}
-          </span>
-          <span className="hover:text-white-2">{medium.svg}</span>{" "}
+        >{medium.svg}
         </Link>
       ))}
-    </div>
+    </StyledConnect>
   );
 };
 
