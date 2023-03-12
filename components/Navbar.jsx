@@ -1,9 +1,10 @@
 import Link from "next/link";
-
+import { useRouter } from "next/router";
 import StyledNavbar from "../styles/styledcomponents/StyledNavbar";
 import Connect from "./Connect";
 
 const Navbar = () => {
+  const router = useRouter();
   const navLinks = [
     {
       title: "About Me",
@@ -21,7 +22,12 @@ const Navbar = () => {
 
   const nav = navLinks.map((link) => (
     <li key={link.href}>
-      <Link href={link.href}>{link.title}</Link>
+      <Link
+        href={link.href}
+        className={router.pathname === link.href ? "active" : ""}
+      >
+        {link.title}
+      </Link>
     </li>
   ));
 
@@ -34,10 +40,13 @@ const Navbar = () => {
           </nav>
         </div>
 
-        <Link href="/" className="logo">
-          <h2>
-            <span className="dev">dev</span><span className="dave">dave</span>
+        <Link href="/" className="logo flex gap-5">
+          <span>{"<"}</span>
+          <h2 className="inline">
+            <span className="dev">dev</span>
+            <span className="dave">dave</span>
           </h2>
+          <span>{"/>"}</span>
         </Link>
 
         <Connect />
