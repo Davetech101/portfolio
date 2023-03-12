@@ -1,37 +1,88 @@
+import StyledHero from "@/styles/styledcomponents/StyledHero";
 import Link from "next/link";
-import { CgArrowLongRight } from "react-icons/cg";
-import Clock from "./Clock";
-// import Cube from "./Cube";
-import P from "./P";
-// absolute top-2/4 -translate-y-3/4 max-w-4xl p-20 flex justify-between items-center w-full
-const Hero = () => {
-  return (
-    <div className="flex absolute top-2/4 -translate-y-2/4 p-40 flex justify-between items-center w-full">
-      <main className="relative w-6/12">
-        <div className="absolute w-0.5 h-32 bg-purple mb-5 -top-16 -left-7"></div>
-        <div className="absolute h-0.5 w-32 bg-purple mb-5 -top-7 -left-16"></div>
-        <p className="uppercase text-3xl underline">
-          {" "}
-          i am a{" "}
-          <span className="text-purple underline">frontend developer</span>
-        </p>
-        <P className="text-3xl text-white-2">
-          I am a well-versed and creative developer who is passionate about
-          creating and contributing to beautiful, interactive and performant
-          software products.
-        </P>
+import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
-        <Link
-          href="/portfolio"
-          className="uppercase flex items-center gap-10 mt-5 block text-2xl"
-        >
-          my portfolio
-          <CgArrowLongRight className="text-6xl" />
-        </Link>
+const Hero = () => {
+  const skills = [
+    {
+      name: "javascript",
+      img: "/assets/javascript.png",
+    },
+    {
+      name: "typescript",
+      img: "/assets/typescript.png",
+    },
+    {
+      name: "react js",
+      img: "/assets/react.png",
+    },
+    {
+      name: "next js",
+      img: "/assets/next.jpeg",
+    },
+    {
+      name: "node js",
+      img: "/assets/node.png",
+    },
+    {
+      name: "three js",
+      img: "/assets/three.png",
+    },
+    {
+      name: "css 3",
+      img: "/assets/CSS3.png",
+    },
+    {
+      name: "html 5",
+      img: "/assets/html.png",
+    },
+    {
+      name: "bootstrap",
+      img: "/assets/bts.png",
+    },
+    {
+      name: "my sql",
+      img: "/assets/msql.png",
+    },
+    {
+      name: "json",
+      img: "/assets/json.jpeg",
+    },
+    {
+      name: "github",
+      img: "/assets/github.png",
+    },
+  ];
+  return (
+    <StyledHero>
+      <main className="relative">
+        <div className="absolute w-0.5 h-60 bg-orange mb-5 -top-20 -left-7"></div>
+        <div className="absolute h-0.5 w-60 bg-orange mb-5 -top-7 -left-20"></div>
+        <p>
+          {" "}
+          I am a{" "}
+          <span className="text-orange underline fd">frontend developer</span>
+        </p>
+        <p>
+          A well-versed and creative developer who is passionate about creating
+          and contributing to beautiful, interactive and performant software
+          products.
+        </p>
       </main>
 
-      <Clock />
-    </div>
+      <Marquee className="marquee-1">
+        {skills.map((skill) => (
+          <Image
+            key={skill.name}
+            src={skill.img}
+            alt={skill.name}
+            width={50}
+            height={50}
+          />
+        ))}
+      </Marquee>
+    </StyledHero>
   );
 };
 
