@@ -11,6 +11,12 @@ const StyledConnect = styled.div`
     background:#67676770;
     border-radius:50%;
     padding:.6rem;
+    transition:all .5s;
+  }
+
+  a:hover{
+    transform:rotate(360deg);
+    color:#f19c00;
   }
 `;
 
