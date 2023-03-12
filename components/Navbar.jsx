@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { HiLightBulb } from "react-icons/hi";
+
+import StyledNavbar from "../styles/styledcomponents/StyledNavbar";
+import Connect from "./Connect";
 
 const Navbar = () => {
   const navLinks = [
@@ -19,30 +21,28 @@ const Navbar = () => {
 
   const nav = navLinks.map((link) => (
     <li key={link.href}>
-      <Link className="text-3xl dark:text-white-2" href={link.href}>{link.title}</Link>
+      <Link href={link.href}>{link.title}</Link>
     </li>
   ));
 
   return (
-    <>
-      <header className="dark:text-white flex items-center justify-between">
-        <Link href="/">
-          <h2 className="text-6xl font-bold dark:text-white">David Enomah</h2>
+    <StyledNavbar>
+      <header>
+        <div>
+          <nav>
+            <ul>{nav}</ul>
+          </nav>
+        </div>
+
+        <Link href="/" className="logo">
+          <h2>
+            <span className="dev">dev</span><span className="dave">dave</span>
+          </h2>
         </Link>
 
-        <div className="flex items-center justify-between w-2/5 gap-20">
-          <nav className="w-full">
-            <ul className="flex items-center justify-between">
-              {nav}
-            </ul>
-          </nav>
-
-          <button className="text-6xl rotate-180">
-            <HiLightBulb />
-          </button>
-        </div>
+        <Connect />
       </header>
-    </>
+    </StyledNavbar>
   );
 };
 
