@@ -8,28 +8,29 @@ const Navbar = () => {
   const navLinks = [
     {
       title: "About Me",
-      href: "about",
+      href: "/about",
     },
     {
       title: "Portfolio",
-      href: "portfolio",
+      href: "/portfolio",
     },
     {
       title: "Contact me",
-      href: "contact",
+      href: "/contact",
     },
   ];
 
-  const nav = navLinks.map((link) => (
-    <li key={link.href}>
+  const nav = navLinks.map((link) => {
+    console.log(router.pathname === link.href)
+    return <li key={link.href}>
       <Link
         href={link.href}
-        className={router.pathname === link.href ? "active" : ""}
+        className={router.pathname === link.href ?  "active flex gap-3 items-center" : "flex gap-3 items-center"}
       >
-        {link.title}
+        <span className="bracket">{"<"}</span>{link.title}<span className="bracket">{"/>"}</span>
       </Link>
     </li>
-  ));
+});
 
   return (
     <StyledNavbar>
@@ -41,12 +42,12 @@ const Navbar = () => {
         </div>
 
         <Link href="/" className="logo flex gap-5">
-          <span>{"<"}</span>
+          <span className={router.pathname === "/" ?  "text-white" : ""}>{"<"}</span>
           <h2 className="inline">
             <span className="dev">dev</span>
             <span className="dave">dave</span>
           </h2>
-          <span>{"/>"}</span>
+          <span className={router.pathname === "/" ?  "text-orange" : ""}>{"/>"}</span>
         </Link>
 
         <Connect />
