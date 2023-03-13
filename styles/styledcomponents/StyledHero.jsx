@@ -153,7 +153,7 @@ const StyledHero = styled.section`
     animation:rotate 100s infinite;
     position:absolute;
     top:0;
-    right:0;
+    right:-40rem;
   }
 
   @keyframes rotate {
@@ -196,6 +196,14 @@ const StyledHero = styled.section`
     position:absolute;
     top:-2rem;
     left:4rem;
+  }
+
+  .king{
+    font-size: 20rem;
+    color: #f19c0036;
+    position: absolute;
+    bottom: -28%;
+    left: 4rem;
   }
 `;
 
