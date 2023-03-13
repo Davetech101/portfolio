@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 import Typewriter from "typewriter-effect";
 import { ImQrcode } from "react-icons/im";
 import { FaCarSide } from "react-icons/fa";
-import { HiOutlineWifi } from "react-icons/hi";
+import { FaChessKing } from "react-icons/fa";
 
 const Hero = () => {
   const skills = [
@@ -57,13 +57,22 @@ const Hero = () => {
       name: "github",
       img: "/assets/github.png",
     },
+    {
+      name: "tailwind",
+      img: "/assets/github.png",
+    },
   ];
 
   return (
     <StyledHero>
       <ImQrcode className="code" />
-      <HiOutlineWifi className="wifi"/>
-
+      <FaChessKing className="king" />
+      {/* <Image
+        src="/assets/avater.jpeg"
+        alt="Picture of the author"
+        width={50}
+        height={10}
+      /> */}
       <main className="relative">
         <span className="po flex">{"<p>"}</span>
 
@@ -104,7 +113,7 @@ const Hero = () => {
         </p>
         <span className="pe">{"</p>"}</span>
 
-        <FaCarSide className="car" />
+        {/* <FaCarSide className="car" /> */}
       </main>
 
       <Marquee
