@@ -110,7 +110,7 @@ const StyledHero = styled.section`
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-family: 'Tangerine', cursive;
+    font-family: 'Indie Flower', cursive;
     letter-spacing:1rem;
   }
 
@@ -138,7 +138,7 @@ const StyledHero = styled.section`
 
   .underline{
     color: #f19c00;
-    font-family: 'Tangerine', cursive;
+    font-family: 'Indie Flower', cursive;
   }
 
   .po, .pe{
