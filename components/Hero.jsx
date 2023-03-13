@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import Typewriter from "typewriter-effect";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { ImQrcode } from "react-icons/im";
 import { FaCarSide } from "react-icons/fa";
 import { HiOutlineWifi } from "react-icons/hi";
@@ -60,11 +59,6 @@ const Hero = () => {
     },
   ];
 
-  const { text } = useTypewriter({
-    words: ["frontend developer", "software engineer", "boy"],
-    loop: {},
-    typeSpeed: 120,
-  });
   return (
     <StyledHero>
       <ImQrcode className="code" />
@@ -80,9 +74,7 @@ const Hero = () => {
           className="text-orange hidden"
           onInit={(typewriter) => {
             typewriter
-              .typeString("tech bro")
-              .deleteAll()
-              .typeString("Ftonrrnd")
+              .typeString("web developer")
               .deleteAll()
               .typeString("frontend developer")
               .start();
