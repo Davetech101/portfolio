@@ -8,28 +8,15 @@ import { useState, useEffect } from "react";
 
 const About = () => {
   const [arrow, setArrow] = useState(0);
-  const [animate, setAnimate] = useState(0);
+  const [animate, setAnimate] = useState(false);
+  const [animateAlt, setAnimateAlt] = useState(false);
 
-  // useEffect(() => {
-  //   setInterval(() => {
-  //     console.log(arrow);
-  //     if (arrow === 3) {
-  //       setArrow(1)
-  //       console.log("yes", arrow);
-  //     }else{
-  //       setArrow(prev => prev + 1)
-  //       console.log("no", arrow);
-  //     }
-  //             // if (arrow < 3) {
-  //     //   setArrow(prev => prev + 1)
-  //     //   console.log(arrow);
-  //     // }else{
-  //     //   // setArrow(prev => prev + 1)
-  //     //   console.log(arrow);
-  //     // }
-  //   }, 9000);
+  useEffect(() => {
+    setInterval(() => {
+      setAnimate(prev => !prev)
+    }, 3000);
 
-  // }, [arrow])
+  }, [animate])
 
   return (
     <StyledAboutMe>
@@ -88,8 +75,8 @@ const About = () => {
         <span className="po block">{'alt="Image of the author"'}</span>
         <span className="po block">{"src="}</span>
         <div
-          onMouseEnter={() => setAnimate(true)}
-          onMouseLeave={() => setAnimate(false)}
+          // onMouseEnter={() => setAnimateAlt(true)}
+          // onMouseLeave={() => setAnimateAlt(false)}
           className={animate ? "images animate" : "images"}
         >
           <div className="images1">
