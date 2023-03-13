@@ -38,32 +38,21 @@ const StyledNavbar = styled.header`
     position:relative;
   }
 
-  nav a::after {
-    content:"";
-    width:.1rem;
-    height:1.5rem;
-    background:#f19c00;
-    position:absolute;
-    bottom:1rem;
-    right:-.5rem;
-    transition:all 1.5s;
-    opacity:0;
+  nav a .bracket{
+    display:inline;
   }
 
-  nav a::before {
-    content:"";
-    width:1.5rem;
-    height:.1rem;
-    background:#f19c00;
-    position:absolute;
-    bottom:1rem;
-    right:-.5rem;
-    transition:all .5s;
-    opacity:0;
+  nav a:hover .bracket{
+    color:white;
   }
 
-  nav a:hover::before, nav a:hover::after{
-    opacity:1;
+  nav a:hover{
+    color:#f19c00;
+  }
+
+  nav a.active .bracket{
+    display:inline;
+    color:#f19c00;
   }
 
   .logo {
