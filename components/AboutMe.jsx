@@ -9,7 +9,6 @@ import { useState, useEffect } from "react";
 const About = () => {
   const [arrow, setArrow] = useState(0);
   const [animate, setAnimate] = useState(false);
-  const [animateAlt, setAnimateAlt] = useState(false);
 
   useEffect(() => {
     setInterval(() => {
