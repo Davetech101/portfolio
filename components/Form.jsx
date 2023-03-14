@@ -2,43 +2,63 @@ import Link from "next/link";
 import { GrLinkedinOption } from "react-icons/gr";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
+import StyledForm from "@/styles/styledcomponents/StyledForm";
+import Typewriter from "typewriter-effect";
 
 const Form = () => {
-  const inputStyles =
-    "border-2 border-white-2 border-solid rounded-xl p-5 w-full text-2xl";
-  const svg = "text-4xl";
   return (
-    <div className="absolute top-2/4 -translate-y-1/2 w-9/12">
-      <p className="text-5xl mb-8 capitalize">Have a message?</p>
-
-      <form action="" className="flex justify-between w-full gap-10 mb-16">
-        <div className="flex flex-col gap-10 w-full">
-          <input type="text" className={inputStyles} placeholder="Name" />{" "}
-          <input type="email" className={inputStyles} placeholder="Email" />
+    <StyledForm>
+      <span className="po">{"<p>"}</span>
+      <h2 className="">
+        Have A
+        <Typewriter
+          className="text-orange hidden"
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("Question?")
+              .deleteAll()
+              .typeString("Suggestion?")
+              .deleteAll()
+              .typeString("Nice day!")
+              .pauseFor(3500)
+              .deleteAll()
+              .typeString("Question?")
+              .deleteAll()
+              .typeString("Suggestion?")
+              .deleteAll()
+              .typeString("Nice day!")
+              .pauseFor(3500)
+              .deleteAll()
+              .typeString("Question?")
+              .deleteAll()
+              .typeString("Suggestion?")
+              .deleteAll()
+              .typeString("Nice day!")
+              .pauseFor(3500)
+              .deleteAll()
+              .typeString("Question?")
+              .deleteAll()
+              .typeString("Suggestion?")
+              .deleteAll()
+              .typeString("Nice day!")
+              .start();
+          }}
+        />
+      </h2>
+      <span className="pe block">{"</p>"}</span>
+      <span className="po">{"<form>"}</span>
+      <form action="" className="">
+        <div className="flex items-center gap-3">
+          <input type="text" className="input" placeholder="Name" />{" "}
+          <input type="email" className="input" placeholder="Email" />
         </div>
-        <textarea
-          name=""
-          id=""
-          className={inputStyles}
-          placeholder="message"
-        ></textarea>
+        <input type="text" placeholder="Subject" className="input"/>
+        <textarea name="" id="" className="input" placeholder="message"></textarea>
+        <button>Send!</button>
       </form>
+      <span className="po">{"</form>"}</span>
 
-      <div className="flex flex-col gap-8">
-        <p className="text-3xl text-white-2">
-          Let&apos;s &nbsp;
-          <span className="text-white">Connect!</span>
-        </p>
-
-        <div className="flex gap-12">
-          <Link href="">
-          <GrLinkedinOption className={svg} /> 
-          </Link>
-          <Link href=""><BsGithub className={svg} /></Link>{" "}
-          <Link href=""><AiOutlineTwitter className={svg} /></Link>
-        </div>
-      </div>
-    </div>
+    </StyledForm>
   );
 };
 
