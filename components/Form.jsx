@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { GrLinkedinOption } from "react-icons/gr";
-import { BsGithub } from "react-icons/bs";
+import { GiPawn } from "react-icons/gi";
 import { AiOutlineTwitter } from "react-icons/ai";
 import StyledForm from "@/styles/styledcomponents/StyledForm";
 import Typewriter from "typewriter-effect";
@@ -8,6 +8,7 @@ import Typewriter from "typewriter-effect";
 const Form = () => {
   return (
     <StyledForm>
+      <GiPawn className="pawn"/>
       <span className="po">{"<p>"}</span>
       <h2 className="">
         Have A
@@ -49,8 +50,8 @@ const Form = () => {
       <span className="po">{"<form>"}</span>
       <form action="" className="">
         <div className="flex items-center gap-3">
-          <input type="text" className="input" placeholder="Name" />{" "}
-          <input type="email" className="input" placeholder="Email" />
+          <input type="text" className="input input1" placeholder="Name" />{" "}
+          <input type="email" className="input input1" placeholder="Email" />
         </div>
         <input type="text" placeholder="Subject" className="input"/>
         <textarea name="" id="" className="input" placeholder="message"></textarea>
