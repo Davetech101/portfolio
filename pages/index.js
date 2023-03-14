@@ -1,4 +1,3 @@
-import Cube from "@/components/Cube";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
