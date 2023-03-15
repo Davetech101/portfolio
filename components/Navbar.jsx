@@ -21,7 +21,6 @@ const Navbar = () => {
   ];
 
   const nav = navLinks.map((link) => {
-    console.log(router.pathname === link.href)
     return <li key={link.href}>
       <Link
         href={link.href}
