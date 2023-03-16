@@ -1,10 +1,11 @@
-import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 
 export default function Portfolio() {
   return (
     <section className="">
-    <Navbar/>
+      <Navbar />
+      <Projects />
     </section>
-  )
+  );
 }
