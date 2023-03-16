@@ -4,7 +4,7 @@ const StyledProjects = styled.div`
   margin-top: 2rem;
   padding: 4rem 15rem;
   position: relative;
-  
+
   .po,
   .pe {
     font-family: "Permanent Marker", cursive;
@@ -23,8 +23,15 @@ const StyledProjects = styled.div`
     margin-left: 5rem;
   }
 
-  .project{
-    
+  .projects {
+    margin-top: 5rem;
+  }
+
+  .project {
+  }
+
+  .images {
+    display: flex;
   }
 `;
 
