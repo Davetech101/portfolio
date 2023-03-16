@@ -32,11 +32,16 @@ const StyledProjects = styled.div`
 
   .images {
     display: flex;
-    position:relative;
+    position: relative;
   }
 
-  .img{
+  img {
+  }
 
+  .img1 {
+    position: absolute;
+    top: 6rem;
+    top: 6rem;
   }
 `;
 
