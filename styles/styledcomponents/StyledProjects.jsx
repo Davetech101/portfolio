@@ -32,6 +32,11 @@ const StyledProjects = styled.div`
 
   .images {
     display: flex;
+    position:relative;
+  }
+
+  .img{
+
   }
 `;
 
