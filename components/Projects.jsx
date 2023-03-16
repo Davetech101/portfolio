@@ -3,7 +3,6 @@ import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
 
-
 const Projects = () => {
   const projects = [
     {
@@ -78,27 +77,29 @@ const Projects = () => {
       <div className="projects">
         {projects.map((project) => (
           <div className="project" key={project.id}>
-            <Image
-              src={project.mobile}
-              alt="Picture of the author"
-              width={200}
-              height={100}
-              className="img1"
-            />
-            <Image
-              src={project.tablet}
-              alt="Picture of the author"
-              width={600}
-              height={100}
-              className="img2"
-            />
-            <Image
-              src={project.desktop}
-              alt="Picture of the author"
-              width={600}
-              height={100}
-              className="img3"
-            />
+            <div className="images">
+              <Image
+                src={project.mobile}
+                alt="Picture of the author"
+                width={200}
+                height={100}
+                className="img1"
+              />
+              <Image
+                src={project.tablet}
+                alt="Picture of the author"
+                width={400}
+                height={100}
+                className="img2"
+              />
+              <Image
+                src={project.desktop}
+                alt="Picture of the author"
+                width={300}
+                height={100}
+                className="img3"
+              />
+            </div>
 
             <div className="typography">
               <h3>{project.name}</h3>
