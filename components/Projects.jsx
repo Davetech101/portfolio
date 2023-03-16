@@ -76,7 +76,7 @@ const Projects = () => {
 
       <div className="projects">
         {projects.map((project) => (
-          <div className="project" key={project.id}>
+          <div className="project flex items-center" key={project.id}>
             <div className="images">
               <Image
                 src={project.mobile}

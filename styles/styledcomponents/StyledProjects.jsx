@@ -22,6 +22,10 @@ const StyledProjects = styled.div`
   h2 div {
     margin-left: 5rem;
   }
+
+  .project{
+    
+  }
 `;
 
 export default StyledProjects;
