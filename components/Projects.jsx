@@ -34,18 +34,18 @@ const Projects = () => {
       desktop: "",
       tablet: "",
       github: "https://github.com/Davetech101/entertainment-web-app",
-      link: "",
+      link: "https://remarkable-centaur-fcc4bc.netlify.app/",
     },
     {
       id: "4",
       name: "Housing Market",
-      tech: "React, Javascript",
+      tech: "React, Javascript, Firebase",
       about: "",
       mobile: "",
       desktop: "",
       tablet: "",
       github: "https://github.com/Davetech101/housing-market",
-      link: "",
+      link: "https://tangerine-starburst-4dce6f.netlify.app/",
     },
     {
       id: "5",
@@ -71,6 +71,10 @@ const Projects = () => {
         />
       </h2>
       <span className="po">{"</h2>"}</span>
+
+      <div className="projects">
+        {projects.map( project => )}
+      </div>
     </StyledProjects>
   );
 };
