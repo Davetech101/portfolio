@@ -78,31 +78,27 @@ const Projects = () => {
       <div className="projects">
         {projects.map((project) => (
           <div className="project" key={project.id}>
-            <div className="images">
             <Image
-              src="/assets/part1.jpeg"
+              src={project.mobile}
               alt="Picture of the author"
               width={200}
               height={100}
               className="img1"
             />
             <Image
-              src="/assets/part2.jpeg"
+              src={project.tablet}
               alt="Picture of the author"
-              width={200}
+              width={600}
               height={100}
               className="img2"
             />
-          </div>
-          <div className="images2">
             <Image
-              src="/assets/part3.jpeg"
+              src={project.desktop}
               alt="Picture of the author"
-              width={200}
+              width={600}
               height={100}
               className="img3"
             />
-            </div>
 
             <div className="typography">
               <h3>{project.name}</h3>
