@@ -1,9 +1,38 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Typewriter from "typewriter-effect";
 import StyledForm from "@/styles/styledcomponents/StyledForm";
 import { GiPawn } from "react-icons/gi";
+import Link from "next/link";
 
 const Form = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    body: "",
+  });
+
+  const onChange = useCallback(
+    (e) => {
+      setFormData((prev) => ({ ...prev, [e.target.id]: e.target.value }));
+      console.log(formData);
+    },
+    [formData]
+  );
+
+  const submitHandler = useCallback(
+    (e) => {
+      e.preventDefault();
+
+      const submitValue = {
+        ...formData,
+      };
+      console.log(formData);
+      // e.target.reset();
+    },
+    [formData]
+  );
+
   return (
     <StyledForm>
       <div className="part1">
@@ -52,23 +81,54 @@ const Form = () => {
       <div className="part2">
         <span className="po">{"<form>"}</span>
 
-        <form action="" className="">
+        <form
+          action="mailto:enomahog@gmail.com" 
+          method="post"
+          enctype="text/plain"
+          className=""
+          onSubmit={submitHandler}
+        >
           <div className="flex items-center gap-3">
-            <input type="text" className="input input1" placeholder="Name" />
+            <input
+              type="text"
+              className="input input1"
+              placeholder="Name"
+              id="name"
+              onChange={onChange}
+            />
 
-            <input type="email" className="input input1" placeholder="Email" />
+            <input
+              type="email"
+              className="input input1"
+              placeholder="Email"
+              id="email"
+              onChange={onChange}
+            />
           </div>
 
-          <input type="text" placeholder="Subject" className="input" />
+          <input
+            type="text"
+            placeholder="Subject"
+            className="input"
+            id="subject"
+            onChange={onChange}
+          />
 
           <textarea
-            name=""
-            id=""
+            id="body"
             className="input"
             placeholder="message"
+            onChange={onChange}
           ></textarea>
 
-          <button>Send!</button>
+          <input type="submit" value="Submit" />
+
+          {/* <Link
+            className="button"
+            href={`mailto:enomahog@gmamil.com?Subject=${formData.subject}&body=${formData.body}`}
+          >
+            <button>Submit</button>
+          </Link> */}
         </form>
 
         <span className="po">{"</form>"}</span>

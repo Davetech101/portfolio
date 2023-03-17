@@ -63,7 +63,7 @@ const StyledForm = styled.section`
       opacity: 1;
     }
   }
-  
+
   .input {
     width: 100%;
     background: #3e3e3e6e;
@@ -92,7 +92,7 @@ const StyledForm = styled.section`
     min-height: 15rem;
   }
 
-  button {
+  a {
     padding: 1rem 2rem;
     font-size: 2rem;
     font-family: "Indie Flower", cursive;
@@ -101,7 +101,7 @@ const StyledForm = styled.section`
     overflow: hidden;
   }
 
-  button::before {
+  a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -114,7 +114,7 @@ const StyledForm = styled.section`
     transition: all 0.5s;
   }
 
-  button::after {
+  a::after {
     content: "";
     position: absolute;
     top: 0;
@@ -127,12 +127,12 @@ const StyledForm = styled.section`
     transition: all 0.5s;
   }
 
-  button:hover {
+  a:hover {
     border: none;
   }
 
-  button:hover::before,
-  button:hover::after {
+  a:hover::before,
+  a:hover::after {
     width: 45%;
   }
 
