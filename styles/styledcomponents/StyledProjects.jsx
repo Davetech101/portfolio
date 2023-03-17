@@ -59,8 +59,10 @@ const StyledProjects = styled.div`
   img {
     // opacity:.5;
     transition: all 0.4s;
-    transform: scale(0.5);
+    transform: scale(0.6);
     box-shadow: 1px 1px 10px 1px #ffffff4d;
+    outline:1px solid #f19c00;
+    outline-offset:1rem;
   }
 
   .img1 {
@@ -82,6 +84,7 @@ const StyledProjects = styled.div`
     opacity: 1;
     z-index: 20;
     transform: scale(1.2);
+    outline-offset:2rem;
   }
 
   .typography {
