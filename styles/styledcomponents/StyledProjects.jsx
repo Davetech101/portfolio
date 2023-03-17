@@ -37,34 +37,27 @@ const StyledProjects = styled.div`
   }
 
   img {
-    // outline:1rem solid #f19c0036;
-    opacity:.5;
+    // opacity:.5;
     transition:all .4s;
     transform:scale(.4);
+    box-shadow:1px 1px 10px 1px #ffffff4d;
   }
 
   .img1 {
     position: absolute;
-    top: 6rem;
-    left: -6rem;
-    width:20rem;
-    box-shadow:1rem 1rem 1rem  #f19c0036;
+    
   }
 
   .img2{
-    box-shadow:1rem 1rem 1rem  #f19c0036;
-    width:50rem;
-    // opacity:1;
-    z-index:10;
-    top:0;
+    
+    z-index:2;
   }
 
   .img3{
-    box-shadow:1rem 1rem 1rem  #f19c0036;
-    width:30rem;
+    
     position: absolute;
     top: 6rem;
-    right: -6rem;
+    right: -4rem;
   }
 
   img:hover {
