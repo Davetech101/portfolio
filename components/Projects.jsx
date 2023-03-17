@@ -108,7 +108,7 @@ const Projects = () => {
 
             <div className="typography">
               <h3>{project.name}</h3>
-              <span>{project.tech}</span>
+              <small className="">{project.tech}</small>
               <p>{project.about}</p>
 
               <div className="btns">
