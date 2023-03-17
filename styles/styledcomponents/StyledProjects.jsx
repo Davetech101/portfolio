@@ -4,6 +4,7 @@ const StyledProjects = styled.div`
   margin-top: 2rem;
   padding: 4rem 15rem;
   position: relative;
+  background-attachment: fixed;
 
   .po,
   .pe {
@@ -28,8 +29,8 @@ const StyledProjects = styled.div`
   }
 
   .project {
-    margin-bottom:20rem;
-    justify-content:space-between;
+    margin-bottom: 20rem;
+    justify-content: space-between;
   }
 
   .images {
@@ -39,23 +40,20 @@ const StyledProjects = styled.div`
 
   img {
     // opacity:.5;
-    transition:all .4s;
-    transform:scale(.5);
-    box-shadow:1px 1px 10px 1px #ffffff4d;
+    transition: all 0.4s;
+    transform: scale(0.5);
+    box-shadow: 1px 1px 10px 1px #ffffff4d;
   }
 
   .img1 {
     position: absolute;
-    
   }
 
-  .img2{
-    
-    z-index:2;
+  .img2 {
+    z-index: 2;
   }
 
-  .img3{
-    
+  .img3 {
     position: absolute;
     top: 6rem;
     right: -4rem;
@@ -63,45 +61,45 @@ const StyledProjects = styled.div`
 
   img:hover {
     // outline:1rem solid #f19c0036;
-    opacity:1;
-    z-index:20;
-    transform:scale(1.2);
+    opacity: 1;
+    z-index: 20;
+    transform: scale(1.2);
   }
 
-  .typography{
-    width:50%;
+  .typography {
+    width: 50%;
   }
 
-  h3{
+  h3 {
     font-family: "Permanent Marker", cursive;
     font-size: 3rem;
     color: #f19c00;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
   }
 
-  small{
-    font-family: 'Indie Flower', cursive;
+  small {
+    font-family: "Indie Flower", cursive;
     font-size: 2rem;
-    margin-bottom:1rem;
-    border-bottom:1px solid #f19c00;
-    border-left:1px solid #f19c00;
-    display:inline-block;
-    padding:0 .5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #f19c00;
+    border-left: 1px solid #f19c00;
+    display: inline-block;
+    padding: 0 0.5rem;
   }
 
-  p{
+  p {
     font-family: "Sono", sans-serif;
     font-size: 2rem;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
   }
 
-  a{
-    font-family: 'Indie Flower', cursive;
+  a {
+    font-family: "Indie Flower", cursive;
     font-size: 1.5rem;
-    border:1px solid #f19c00;
-    padding:.5rem 1rem;
-    margin:0 1rem 0 0;
-    position:relative;
+    border: 1px solid #f19c00;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem 0 0;
+    position: relative;
   }
 
   a::before {
@@ -137,6 +135,14 @@ const StyledProjects = styled.div`
   a:hover::before,
   a:hover::after {
     width: 45%;
+  }
+
+  .wave {
+    font-size: 80rem;
+    color: #f19c0036;
+    position: absolute;
+    top: -15rem;
+    right: -10rem;
   }
 `;
 

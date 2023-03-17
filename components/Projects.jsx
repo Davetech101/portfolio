@@ -2,7 +2,8 @@ import StyledProjects from "@/styles/styledcomponents/StyledProjects";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
-GiStaticWaves
+import { GiStaticWaves } from "react-icons/gi";
+
 const Projects = () => {
   const projects = [
     {
@@ -126,6 +127,8 @@ const Projects = () => {
           </div>
         ))}
       </div>
+
+      <GiStaticWaves className="wave"/>
     </StyledProjects>
   );
 };
