@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledProjects = styled.div`
   margin-top: 2rem;
-  padding: 4rem 15rem 0;
+  padding: 10rem 15rem 0;
   position: relative;
 
   .po,
@@ -25,8 +25,8 @@ const StyledProjects = styled.div`
 
   .projects {
     margin-top: 5rem;
-    z-index:10;
-    position:relative;
+    z-index: 10;
+    position: relative;
   }
 
   .project {
@@ -37,8 +37,25 @@ const StyledProjects = styled.div`
   .images {
     display: flex;
     position: relative;
+    animation: images 1s;
   }
 
+  @keyframes images {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    50% {
+      opacity: 0.5;
+      transform: scale(1.2);
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
   img {
     // opacity:.5;
     transition: all 0.4s;
@@ -69,6 +86,17 @@ const StyledProjects = styled.div`
 
   .typography {
     width: 50%;
+    animation: typo 4s;
+  }
+
+  @keyframes typo {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 
   h3 {
@@ -142,9 +170,9 @@ const StyledProjects = styled.div`
     font-size: 80rem;
     color: #f19c0036;
     position: absolute;
-    top: -15rem;
+    top: 0rem;
     right: -10rem;
-    z-index:0;
+    z-index: 0;
   }
 
   .storm {
@@ -153,7 +181,7 @@ const StyledProjects = styled.div`
     position: absolute;
     bottom: -30rem;
     left: -5rem;
-    z-index:0;
+    z-index: 0;
   }
 `;
 
