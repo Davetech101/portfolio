@@ -9,7 +9,8 @@ const Projects = () => {
       id: "1",
       name: "Coventry hotel",
       tech: "Next js, Typescript",
-      about: "",
+      about:
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum repellat possimus quisquam animi facilis quasi vero nam quod aliquid.",
       mobile: "/assets/testMob.jpeg",
       desktop: "/assets/testTab.jpeg",
       tablet: "/assets/testDex.jpeg",
@@ -20,7 +21,8 @@ const Projects = () => {
       id: "2",
       name: "rest countries",
       tech: "React js, Javascript",
-      about: "",
+      about:
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum repellat possimus quisquam animi facilis quasi vero nam quod aliquid.",
       mobile: "/assets/testMob.jpeg",
       desktop: "/assets/testTab.jpeg",
       tablet: "/assets/testDex.jpeg",
@@ -31,7 +33,8 @@ const Projects = () => {
       id: "3",
       name: "Entertainment web app",
       tech: "Next js, javascript",
-      about: "",
+      about:
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum repellat possimus quisquam animi facilis quasi vero nam quod aliquid.",
       mobile: "/assets/testMob.jpeg",
       desktop: "/assets/testTab.jpeg",
       tablet: "/assets/testDex.jpeg",
@@ -42,7 +45,8 @@ const Projects = () => {
       id: "4",
       name: "Housing Market",
       tech: "React, Javascript, Firebase",
-      about: "",
+      about:
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum repellat possimus quisquam animi facilis quasi vero nam quod aliquid.",
       mobile: "/assets/testMob.jpeg",
       desktop: "/assets/testTab.jpeg",
       tablet: "/assets/testDex.jpeg",
@@ -53,7 +57,8 @@ const Projects = () => {
       id: "5",
       name: "Todo",
       tech: "React, Javascript",
-      about: "",
+      about:
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum repellat possimus quisquam animi facilis quasi vero nam quod aliquid.",
       mobile: "/assets/testMob.jpeg",
       desktop: "/assets/testTab.jpeg",
       tablet: "/assets/testDex.jpeg",
