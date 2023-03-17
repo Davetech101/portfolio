@@ -129,7 +129,7 @@ const Projects = () => {
       </div>
 
       <GiStaticWaves className="wave"/>
-      <GiCastleRuins className="rook"/>
+      <GiCastleRuins className="castle"/>
     </StyledProjects>
   );
 };

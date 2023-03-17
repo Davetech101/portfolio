@@ -151,8 +151,8 @@ const StyledProjects = styled.div`
     font-size: 50rem;
     color: #f19c0036;
     position: absolute;
-    bottom: -15rem;
-    right: -10rem;
+    bottom: 0;
+    right: -5rem;
     z-index:0;
   }
 `;
