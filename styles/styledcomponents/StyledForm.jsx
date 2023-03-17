@@ -1,26 +1,21 @@
 import styled from "styled-components";
 
 const StyledForm = styled.section`
-  margin-top: 10rem;
+  margin-top: 15rem;
   padding: 4rem;
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+
+  .part1 {
+    width: 50%;
+  }
 
   .po,
   .pe {
     font-family: "Permanent Marker", cursive;
     color: #f19c0036;
     font-size: 2rem;
-  }
-
-  .part1 {
-    width: 50%;
-  }
-
-  .part2 {
-    width: 50%;
   }
 
   h2 {
@@ -37,41 +32,45 @@ const StyledForm = styled.section`
     font-family: "Permanent Marker", cursive;
   }
 
+  .part2 {
+    width: 70%;
+  }
+
   form {
     display: flex;
     flex-direction: column;
-    max-width: 50rem;
+    max-width: 60rem;
     gap: 1rem;
     margin: 2rem 5rem;
     z-index: 1;
     position: relative;
     animation: form 2s;
-}
-
-@keyframes form {
-  0% {
-    transform: translateX(50rem);
-    opacity:0;
   }
 
-  75% {
-    transform: translateX(-2rem);
-    opacity:.75;
-  }
+  @keyframes form {
+    0% {
+      transform: translateX(50rem);
+      opacity: 0;
+    }
 
-  100% {
-    transform: translateX(0);
-    opacity:1;
+    75% {
+      transform: translateX(-2rem);
+      opacity: 0.75;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
-}
+  
   .input {
     width: 100%;
     background: #3e3e3e6e;
-    padding: 1rem;
+    padding: 2rem;
     font-size: 2rem;
     font-family: "Indie Flower", cursive;
     outline: none;
-    // border-bottom:1px dashed #f19c00;
     caret-color: #f19c00;
     transition: all 0.4s;
   }
@@ -143,32 +142,6 @@ const StyledForm = styled.section`
     position: absolute;
     top: -15rem;
     right: -10rem;
-  }
-
-  .bell {
-    font-size: 50rem;
-    color: #f19c0036;
-    position: absolute;
-    top: -10rem;
-    left: 3rem;
-  }
-
-  .ringbell{
-    animation: ring .1s infinite;
-  }
-
-  @keyframes ring {
-    0% {
-      transform: skew(9deg);
-    }
-
-    50% {
-      transform: skew(-9deg);
-    }
-
-    100% {
-      transform: skew(0);
-    }
   }
 `;
 
