@@ -83,9 +83,10 @@ const StyledProjects = styled.div`
     font-family: 'Indie Flower', cursive;
     font-size: 2rem;
     margin-bottom:1rem;
-    text-decoration-color:#f19c0036;
     border-bottom:1px solid #f19c00;
+    border-left:1px solid #f19c00;
     display:inline-block;
+    padding:0 .5rem;
   }
 
   p{
@@ -100,6 +101,41 @@ const StyledProjects = styled.div`
     border:1px solid #f19c00;
     padding:.5rem 1rem;
     margin:0 1rem 0 0;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    background: #f19c00;
+    border-top-right-radius: 7rem;
+    transition: all 0.5s;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 00%;
+    height: 100%;
+    background: #f19c00;
+    border-bottom-left-radius: 7rem;
+    transition: all 0.5s;
+  }
+
+  a:hover {
+    border: none;
+  }
+
+  a:hover::before,
+  a:hover::after {
+    width: 45%;
   }
 `;
 
