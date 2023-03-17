@@ -13,6 +13,55 @@ const StyledHero = styled.section`
     margin-top: 6rem;
   }
 
+  .cta{
+    margin-left:6rem;
+  }
+
+  a {
+    font-family: "Indie Flower", cursive;
+    font-size: 2rem;
+    border: 1px solid #f19c00;
+    padding: 1rem 1.5rem;
+    margin: 0 1rem 0 0;
+    position: relative;
+    color:white;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    background: #f19c00;
+    border-top-right-radius: 7rem;
+    transition: all 0.5s;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 00%;
+    height: 100%;
+    background: #f19c00;
+    border-bottom-left-radius: 7rem;
+    transition: all 0.5s;
+  }
+
+  a:hover {
+    border: none;
+  }
+
+  a:hover::before,
+  a:hover::after {
+    width: 45%;
+  }
+
   .vertical {
     animation: vertical 1s;
   }
@@ -150,10 +199,10 @@ const StyledHero = styled.section`
   .code{
     color: #f19c0036;
     font-size:100rem;
-    animation:rotate 100s infinite;
+    animation:rotate 80s infinite;
     position:absolute;
     top:0;
-    right:-40rem;
+    right:-70rem;
   }
 
   @keyframes rotate {
@@ -164,46 +213,6 @@ const StyledHero = styled.section`
     100% {
       transform:rotate(360deg);
     }
-  }
-
-  .car{
-    font-size:8rem;
-    animation:car 1000s infinite;
-    margin-bottom:50rem;
-    color:#f19c0036;
-    position:fixed;
-    top:90%;
-    left:0;
-  }
-
-  @keyframes car {
-    0% {
-      transform: translateX(0);
-    }
-
-    50%{
-      transform: translateX(100vw);
-    }
-
-    100% {
-      transform:translateX(-100vw);
-    }
-  }
-
-  .wifi{
-    font-size:8rem;
-    color:#f19c0036;
-    position:absolute;
-    top:-2rem;
-    left:4rem;
-  }
-
-  .king{
-    font-size: 20rem;
-    color: #f19c0036;
-    position: absolute;
-    bottom: -28%;
-    left: 4rem;
   }
 `;
 
