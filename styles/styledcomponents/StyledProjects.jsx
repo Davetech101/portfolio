@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledProjects = styled.div`
   margin-top: 2rem;
-  padding: 4rem 15rem;
+  padding: 4rem 15rem 0;
   position: relative;
 
   .po,
@@ -15,7 +15,7 @@ const StyledProjects = styled.div`
   h2 {
     font-family: "Permanent Marker", cursive;
     color: #f19c00;
-    font-size: 4rem;
+    font-size: 6rem;
     // display: inline;
   }
 
@@ -147,12 +147,12 @@ const StyledProjects = styled.div`
     z-index:0;
   }
 
-  .castle {
+  .storm {
     font-size: 50rem;
     color: #f19c0036;
     position: absolute;
-    bottom: 0;
-    right: -5rem;
+    bottom: -30rem;
+    left: -5rem;
     z-index:0;
   }
 `;

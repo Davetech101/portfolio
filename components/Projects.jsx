@@ -2,7 +2,7 @@ import StyledProjects from "@/styles/styledcomponents/StyledProjects";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
-import { GiStaticWaves, GiCastleRuins } from "react-icons/gi";
+import { GiStaticWaves, GiSandstorm } from "react-icons/gi";
 
 const Projects = () => {
   const projects = [
@@ -129,7 +129,7 @@ const Projects = () => {
       </div>
 
       <GiStaticWaves className="wave"/>
-      <GiCastleRuins className="castle"/>
+      <GiSandstorm className="storm"/>
     </StyledProjects>
   );
 };
