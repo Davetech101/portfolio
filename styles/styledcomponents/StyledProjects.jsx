@@ -37,14 +37,41 @@ const StyledProjects = styled.div`
   }
 
   img {
+    // outline:1rem solid #f19c0036;
+    opacity:.5;
+    transition:all .4s;
+    transform:scale(.4);
   }
 
   .img1 {
     position: absolute;
     top: 6rem;
-    top: 6rem;
+    left: -6rem;
     width:20rem;
     box-shadow:1rem 1rem 1rem  #f19c0036;
+  }
+
+  .img2{
+    box-shadow:1rem 1rem 1rem  #f19c0036;
+    width:50rem;
+    // opacity:1;
+    z-index:10;
+    top:0;
+  }
+
+  .img3{
+    box-shadow:1rem 1rem 1rem  #f19c0036;
+    width:30rem;
+    position: absolute;
+    top: 6rem;
+    right: -6rem;
+  }
+
+  img:hover {
+    // outline:1rem solid #f19c0036;
+    opacity:1;
+    z-index:20;
+    transform:scale(1.2);
   }
 `;
 
