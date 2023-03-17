@@ -66,13 +66,7 @@ const Hero = () => {
   return (
     <StyledHero>
       <ImQrcode className="code" />
-      <FaChessKing className="king" />
-      {/* <Image
-        src="/assets/avater.jpeg"
-        alt="Picture of the author"
-        width={50}
-        height={10}
-      /> */}
+
       <main className="relative">
         <span className="po flex">{"<p>"}</span>
 
@@ -90,30 +84,12 @@ const Hero = () => {
           }}
         />
         <p>
-          <span className="span">A</span>{" "}
-          <span className="span underline">well-versed</span>{" "}
-          <span className="span">and</span>{" "}
-          <span className="span underline">creative</span>{" "}
-          <span className="span">developer</span>{" "}
-          <span className="span">who</span> <span className="span">is</span>{" "}
-          <span className="span">passionate</span>{" "}
-          <span className="span">about</span>{" "}
-          <span className="span">creating</span>{" "}
-          <span className="span">and</span>{" "}
-          <span className="span">contributing</span>{" "}
-          <span className="span">to</span>{" "}
-          <span className="span underline">beautiful</span>
-          <span className="span">,</span>{" "}
-          <span className="span underline">interactive</span>{" "}
-          <span className="span">and</span>{" "}
-          <span className="span underline">performant</span>{" "}
-          <span className="span">software</span>{" "}
-          <span className="span">products</span>
-          <span className="span">.</span>{" "}
+          A well-versed and creative developer who is passionate about creating
+          and contributing to beautiful, interactive and performant software
+          products .
         </p>
         <span className="pe">{"</p>"}</span>
 
-        {/* <FaCarSide className="car" /> */}
       </main>
 
       <Marquee

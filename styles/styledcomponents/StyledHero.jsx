@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledHero = styled.section`
-  margin-top: 4rem;
+  margin-top: 10rem;
   padding: 4rem;
   display: flex;
   align-items: center;
