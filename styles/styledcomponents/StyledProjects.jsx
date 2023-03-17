@@ -29,6 +29,7 @@ const StyledProjects = styled.div`
 
   .project {
     margin-bottom:20rem;
+    justify-content:space-between;
   }
 
   .images {
@@ -39,7 +40,7 @@ const StyledProjects = styled.div`
   img {
     // opacity:.5;
     transition:all .4s;
-    transform:scale(.4);
+    transform:scale(.5);
     box-shadow:1px 1px 10px 1px #ffffff4d;
   }
 
@@ -65,6 +66,10 @@ const StyledProjects = styled.div`
     opacity:1;
     z-index:20;
     transform:scale(1.2);
+  }
+
+  .typography{
+    width:50%;
   }
 `;
 
