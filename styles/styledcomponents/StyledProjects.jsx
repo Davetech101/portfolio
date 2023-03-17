@@ -28,6 +28,7 @@ const StyledProjects = styled.div`
   }
 
   .project {
+    margin-bottom:20rem;
   }
 
   .images {
@@ -42,6 +43,8 @@ const StyledProjects = styled.div`
     position: absolute;
     top: 6rem;
     top: 6rem;
+    width:20rem;
+    box-shadow:1rem 1rem 1rem  #f19c0036;
   }
 `;
 
