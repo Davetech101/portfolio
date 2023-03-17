@@ -9,7 +9,10 @@ const StyledNavbar = styled.header`
     background:#3e3e3e;
     animation:header 1s;
     z-index:100;
-    position:relative;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
   }
 
   @keyframes header {
