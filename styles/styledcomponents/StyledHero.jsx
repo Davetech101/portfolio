@@ -8,58 +8,34 @@ const StyledHero = styled.section`
   justify-content: center;
   position: relative;
 
+  .code{
+    color: #f19c0036;
+    font-size:100rem;
+    animation:rotate 80s infinite;
+    position:absolute;
+    top:0;
+    right:-70rem;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform:rotate(360deg);
+    }
+  }
+
   main {
     max-width: 90rem;
     margin-top: 6rem;
   }
 
-  .cta{
-    margin-left:6rem;
-  }
-
-  a {
-    font-family: "Indie Flower", cursive;
+  .po, .pe{
+    font-family: "Permanent Marker", cursive;
+    color: #f19c0036;
     font-size: 2rem;
-    border: 1px solid #f19c00;
-    padding: 1rem 1.5rem;
-    margin: 0 1rem 0 0;
-    position: relative;
-    color:white;
-  }
-
-  a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 0%;
-    height: 100%;
-    background: #f19c00;
-    border-top-right-radius: 7rem;
-    transition: all 0.5s;
-  }
-
-  a::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    width: 00%;
-    height: 100%;
-    background: #f19c00;
-    border-bottom-left-radius: 7rem;
-    transition: all 0.5s;
-  }
-
-  a:hover {
-    border: none;
-  }
-
-  a:hover::before,
-  a:hover::after {
-    width: 45%;
   }
 
   .vertical {
@@ -121,6 +97,62 @@ const StyledHero = styled.section`
     }
   }
 
+  main > div {
+    font-family: "Permanent Marker", cursive;
+    color: #f19c00;
+    font-size: 3rem;
+    display: inline;
+  }
+
+  .cta{
+    margin-left:6rem;
+  }
+
+  a {
+    font-family: "Indie Flower", cursive;
+    font-size: 2rem;
+    border: 1px solid #f19c00;
+    padding: 1rem 1.5rem;
+    margin: 0 1rem 0 0;
+    position: relative;
+    color:white;
+  }
+
+  a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    background: #f19c00;
+    border-top-right-radius: 7rem;
+    transition: all 0.5s;
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 00%;
+    height: 100%;
+    background: #f19c00;
+    border-bottom-left-radius: 7rem;
+    transition: all 0.5s;
+  }
+
+  a:hover {
+    border: none;
+  }
+
+  a:hover::before,
+  a:hover::after {
+    width: 45%;
+  }
+
   .marquee-1 {
     position: absolute;
     background: #3e3e3e;
@@ -173,46 +205,10 @@ const StyledHero = styled.section`
     margin-left: -1em;
     border-radius: 50%;
   }
-
-  main > div {
-    font-family: "Permanent Marker", cursive;
-    color: #f19c00;
-    font-size: 3rem;
-    display: inline;
-  }
-
-  .span{
-    transition:all .5s;
-  }
-
+  
   .underline{
     color: #f19c00;
     font-family: 'Indie Flower', cursive;
-  }
-
-  .po, .pe{
-    font-family: "Permanent Marker", cursive;
-    color: #f19c0036;
-    font-size: 2rem;
-  }
-
-  .code{
-    color: #f19c0036;
-    font-size:100rem;
-    animation:rotate 80s infinite;
-    position:absolute;
-    top:0;
-    right:-70rem;
-  }
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(0);
-    }
-
-    100% {
-      transform:rotate(360deg);
-    }
   }
 `;
 

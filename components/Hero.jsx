@@ -55,8 +55,11 @@ const Hero = () => {
         <span className="po flex">{"<p>"}</span>
 
         <span className="absolute w-0.5 h-60 bg-orange mb-5 -top-20 -left-7 vertical"></span>
+
         <span className="absolute h-0.5 w-60 bg-orange mb-5 -top-7 -left-20 horizontal"></span>
+
         <p className="inline mr-5">I am a</p>
+
         <Typewriter
           className="text-orange hidden"
           onInit={(typewriter) => {
@@ -67,12 +70,18 @@ const Hero = () => {
               .start();
           }}
         />
+
         <p>
-          A well-versed and creative developer who is passionate about creating
-          and contributing to beautiful, interactive and performant software
-          products.
+          A <span className="underline">well-versed</span> and{" "}
+          <span className="underline">creative</span> developer who is
+          passionate about creating and contributing to{" "}
+          <span className="underline">beautiful</span>,{" "}
+          <span className="underline">interactive</span> and{" "}
+          <span className="underline">performant</span> software products.
         </p>
+
         <span className="pe block">{"</p>"}</span>
+
         <div className="cta">
           <Link href="/portfolio">My work</Link>
           <Link href="/contact">Say hello</Link>
