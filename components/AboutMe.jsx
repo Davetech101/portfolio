@@ -1,21 +1,19 @@
+import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import StyledAboutMe from "@/styles/styledcomponents/StyledAboutMe";
 import { GiChessKnight } from "react-icons/gi";
 import { MdOutlineNavigateNext } from "react-icons/md";
-import Image from "next/image";
-import { useState, useEffect } from "react";
 
 const About = () => {
   const [arrow, setArrow] = useState(0);
   const [animate, setAnimate] = useState(false);
 
-  useEffect(() => {
     setInterval(() => {
       setAnimate(prev => !prev)
-    }, 3000);
+    }, 100);
 
-  }, [animate])
 
   return (
     <StyledAboutMe>
@@ -39,13 +37,12 @@ const About = () => {
         <span className="pe block">{"</p>"}</span>
         <div className="text">
           <p>
-            I am a Frontend developer located in Nigeria. Ardent towards UI
+            I am a Frontend developer located in Nigeria. A Tech prodigy, ardent towards UI
             effects, animation and creating intuitive, dynamic user experiences.
           </p>
           <p>
-            A well-organised, problem solving and independent indivdual who pays
-            high attention to details. A Football fan, chess player and also a
-            lover of poetry. Currently undergoing my BSc in Electronics and
+            A well-organised, problem solving indivdual who pays
+            high attention to details. A Football fan, poetryy lover and chess player. Currently undergoing my BSc in Electronics and
             Computer Engineering at the University of Port Harcourt, Nigeria!
           </p>
           <p>
@@ -74,8 +71,6 @@ const About = () => {
         <span className="po block">{'alt="Image of the author"'}</span>
         <span className="po block">{"src="}</span>
         <div
-          // onMouseEnter={() => setAnimateAlt(true)}
-          // onMouseLeave={() => setAnimateAlt(false)}
           className={animate ? "images animate" : "images"}
         >
           <div className="images1">

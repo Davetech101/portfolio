@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledAboutMe = styled.section`
-  margin-top: 2rem;
+  margin-top: 8rem;
   padding: 4rem;
   position: relative;
   display: flex;
