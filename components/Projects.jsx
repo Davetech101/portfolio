@@ -2,7 +2,7 @@ import StyledProjects from "@/styles/styledcomponents/StyledProjects";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
-
+GiStaticWaves
 const Projects = () => {
   const projects = [
     {
@@ -81,7 +81,14 @@ const Projects = () => {
 
       <div className="projects">
         {projects.map((project) => (
-          <div className="project flex items-center" key={project.id}>
+          <div
+            className={
+              project.id % 2 === 0
+                ? `project flex items-center flex-row-reverse`
+                : `project flex items-center`
+            }
+            key={project.id}
+          >
             <div className="images">
               <Image
                 src={project.mobile}

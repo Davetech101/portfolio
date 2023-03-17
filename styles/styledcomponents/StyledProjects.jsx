@@ -101,6 +101,7 @@ const StyledProjects = styled.div`
     border:1px solid #f19c00;
     padding:.5rem 1rem;
     margin:0 1rem 0 0;
+    position:relative;
   }
 
   a::before {
