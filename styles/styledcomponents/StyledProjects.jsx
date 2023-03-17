@@ -4,7 +4,6 @@ const StyledProjects = styled.div`
   margin-top: 2rem;
   padding: 4rem 15rem;
   position: relative;
-  background-attachment: fixed;
 
   .po,
   .pe {
@@ -26,6 +25,8 @@ const StyledProjects = styled.div`
 
   .projects {
     margin-top: 5rem;
+    z-index:10;
+    position:relative;
   }
 
   .project {
@@ -143,6 +144,16 @@ const StyledProjects = styled.div`
     position: absolute;
     top: -15rem;
     right: -10rem;
+    z-index:0;
+  }
+
+  .castle {
+    font-size: 50rem;
+    color: #f19c0036;
+    position: absolute;
+    bottom: -15rem;
+    right: -10rem;
+    z-index:0;
   }
 `;
 
