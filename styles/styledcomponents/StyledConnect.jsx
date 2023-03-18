@@ -5,19 +5,23 @@ const StyledConnect = styled.div`
   gap: 3rem;
   justify-content: space-between;
   align-items: center;
-  max-width:25rem;
+  max-width: 25rem;
 
-  a{
-    font-size:2rem;
-    background:#67676770;
-    border-radius:50%;
-    padding:.6rem;
-    transition:all .5s;
+  a {
+    font-size: 2rem;
+    background: #67676770;
+    border-radius: 50%;
+    padding: 0.6rem;
+    transition: all 0.5s;
   }
 
-  a:hover{
-    transform:rotate(360deg);
-    color:#f19c00;
+  a:hover {
+    transform: rotate(360deg);
+    color: #f19c00;
+  }
+
+  @media only screen and (max-width: 850px) {
+    max-width: 20rem;
   }
 `;
 
