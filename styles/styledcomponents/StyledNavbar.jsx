@@ -100,6 +100,7 @@ const StyledNavbar = styled.header`
       right:0;
       width:100vw;
       height:100vh;
+      z-index:100;
     }
 
     .overlay{
@@ -108,36 +109,20 @@ const StyledNavbar = styled.header`
       height:100%;
     }
 
+    .mobileNav{
+      background:#3e3e3e;
+      width:40%;
+      height:100%;
+      position:absolute;
+      right:0;
+    }
+
     nav ul {
       display: flex;
+      flex-direction:column;
       align-items: center;
       gap: 4rem;
-    }
-  
-    nav a {
-      font-size:2rem;
-      text-transform: capitalize;
-      font-family: 'Indie Flower', cursive;
-      transition:all .5s;
-      padding:1rem;
-      position:relative;
-    }
-  
-    nav a .bracket{
-      display:inline;
-    }
-  
-    nav a:hover .bracket{
-      color:white;
-    }
-  
-    nav a:hover{
-      color:#f19c00;
-    }
-  
-    nav a.active .bracket{
-      display:inline;
-      color:#f19c00;
+      padding-top:8rem;
     }
   }
 `;

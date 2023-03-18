@@ -86,6 +86,7 @@ const Navbar = () => {
             <nav>
               <ul>{nav}</ul>
             </nav>
+            <Connect />
           </div>
         </div>
       </header>
