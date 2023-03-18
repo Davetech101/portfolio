@@ -149,9 +149,9 @@ const StyledNavbar = styled.header`
       padding-top:5rem;
     }
 
-    .close{
-      top:1rem;
-      right:1rem;
+    .toggle{
+      font-size:3rem;
+      color:#f19c00;
     }
   }
 `;
