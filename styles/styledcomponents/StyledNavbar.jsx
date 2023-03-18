@@ -15,6 +15,10 @@ const StyledNavbar = styled.header`
     width:100%;
   }
 
+  .mobile{
+    display:none;
+  }
+
   @keyframes header {
     0% {
       opacity:0;
@@ -81,6 +85,14 @@ const StyledNavbar = styled.header`
 
 
   @media only screen and (max-width:1000px){
+
+    .desktop{
+      display:none;
+    }
+
+    mobile{
+      display:block;
+    }
 
   }
 `;
