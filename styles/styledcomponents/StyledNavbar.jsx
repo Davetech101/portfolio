@@ -62,6 +62,7 @@ const StyledNavbar = styled.header`
   .logo {
     font-size: 3rem;
     font-family: 'Dancing Script', cursive;
+    margin-bottom:1rem;
   }
 
   .logo h2{
@@ -76,6 +77,11 @@ const StyledNavbar = styled.header`
 
   .dev {
     color: #f19c00;
+  }
+
+
+  @media only screen and (max-width:1000px){
+
   }
 `;
 
