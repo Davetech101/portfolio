@@ -77,6 +77,17 @@ const Navbar = () => {
             {"/>"}
           </span>
         </Link>
+
+        <button className="hamburger">ham</button>
+
+        <div className="menu">
+          <div className="overlay"></div>
+          <div className="mobileNav">
+            <nav>
+              <ul>{nav}</ul>
+            </nav>
+          </div>
+        </div>
       </header>
     </StyledNavbar>
   );
