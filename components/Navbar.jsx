@@ -83,6 +83,9 @@ const Navbar = () => {
         <div className="menu">
           <div className="overlay"></div>
           <div className="mobileNav">
+          <button className="close absolute">
+            close
+          </button>
             <nav>
               <ul>{nav}</ul>
             </nav>

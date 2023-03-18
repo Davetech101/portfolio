@@ -111,10 +111,15 @@ const StyledNavbar = styled.header`
 
     .mobileNav{
       background:#3e3e3e;
-      width:40%;
+      width:30%;
       height:100%;
       position:absolute;
       right:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:space-between;
+      padding:0rem 2rem 10rem;
     }
 
     nav ul {
@@ -122,7 +127,12 @@ const StyledNavbar = styled.header`
       flex-direction:column;
       align-items: center;
       gap: 4rem;
-      padding-top:8rem;
+      padding-top:5rem;
+    }
+
+    .close{
+      top:1rem;
+      right:1rem;
     }
   }
 `;
