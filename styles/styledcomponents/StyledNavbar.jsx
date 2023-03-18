@@ -92,7 +92,10 @@ const StyledNavbar = styled.header`
 
     .mobile{
       display:flex;
-      z-index:100;
+    }
+
+    .mobile .logo{
+      // z-index:-1;
     }
 
     .menu{
@@ -101,13 +104,13 @@ const StyledNavbar = styled.header`
       right:0;
       width:100vw;
       height:100vh;
-      z-index:-10;
+      visibility:hidden;
     }
 
     .overlay{
       background:rgba(0,0,0,.7);
-      width:100%;
-      height:100%;
+      width:100vw;
+      height:100vh;
       opacity:0;
       visibility:hidden;
       transition:all .5s;
@@ -116,11 +119,12 @@ const StyledNavbar = styled.header`
     .overlay.show{
       opacity:1;
       visibility:visible;
+      z-index:10;
     }
 
     .mobileNav{
       background:#3e3e3e;
-      width:30%;
+      width:60%;
       height:100%;
       position:absolute;
       right:0;
@@ -128,14 +132,15 @@ const StyledNavbar = styled.header`
       flex-direction:column;
       align-items:center;
       justify-content:space-between;
-      padding:0rem 2rem 10rem;
+      padding:0rem 2rem 25rem;
       transition:all .5s;
       transform:translatex(40rem);
       opacity:0;
       visibility:hidden;
     }
-
+    
     .mobileNav.show{
+      z-index:10;
       transform:translatex(0rem);
       opacity:1;
       visibility:visible;
@@ -151,7 +156,24 @@ const StyledNavbar = styled.header`
 
     .toggle{
       font-size:3rem;
+      z-index:10;
       color:#f19c00;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .mobileNav{
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .mobileNav{
+      padding:0rem 1rem 25rem;
+      width:70%;
+    }
+
+    nav a {
+    font-size:3rem;
     }
   }
 `;

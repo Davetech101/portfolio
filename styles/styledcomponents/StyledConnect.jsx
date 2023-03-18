@@ -21,7 +21,23 @@ const StyledConnect = styled.div`
   }
 
   @media only screen and (max-width: 850px) {
-    max-width: 20rem;
+    gap:2rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    gap:1rem;
+
+    a {
+      font-size: 1.5rem;
+      padding: 0.6rem;
+    }
+  }
+
+  @media only screen and (max-width: 470px) {
+    a {
+      font-size: 1.5rem;
+      padding: 0.4rem;
+    }
   }
 `;
 
