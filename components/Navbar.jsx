@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
 import StyledNavbar from "../styles/styledcomponents/StyledNavbar";
 import Connect from "./Connect";
+import { FaHamburger } from "react-icons/fa"
+import { BsChevronDoubleRight } from "react-icons/bs"
 
 const Navbar = () => {
+  const [showNav, setShowNav] = useState(false);
   const router = useRouter();
   const navLinks = [
     {
@@ -78,14 +82,16 @@ const Navbar = () => {
           </span>
         </Link>
 
-        <button className="hamburger">ham</button>
+        <button className="toggle" onClick={() => setShowNav(prev => !prev)}>
+          {showNav ? <BsChevronDoubleRight/> : <FaHamburger/>}
+        </button>
 
         <div className="menu">
-          <div className="overlay"></div>
-          <div className="mobileNav">
-          <button className="close absolute">
-            close
-          </button>
+          <div
+            onClick={() => setShowNav(false)}
+            className={showNav ? "overlay show" : "overlay"}
+          ></div>
+          <div className={showNav ? "mobileNav show" : "mobileNav"}>
             <nav>
               <ul>{nav}</ul>
             </nav>

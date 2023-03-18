@@ -92,6 +92,7 @@ const StyledNavbar = styled.header`
 
     .mobile{
       display:flex;
+      z-index:100;
     }
 
     .menu{
@@ -100,13 +101,21 @@ const StyledNavbar = styled.header`
       right:0;
       width:100vw;
       height:100vh;
-      z-index:100;
+      z-index:-10;
     }
 
     .overlay{
-      background:rgba(0,0,0,.5);
+      background:rgba(0,0,0,.7);
       width:100%;
       height:100%;
+      opacity:0;
+      visibility:hidden;
+      transition:all .5s;
+    }
+
+    .overlay.show{
+      opacity:1;
+      visibility:visible;
     }
 
     .mobileNav{
@@ -120,6 +129,16 @@ const StyledNavbar = styled.header`
       align-items:center;
       justify-content:space-between;
       padding:0rem 2rem 10rem;
+      transition:all .5s;
+      transform:translatex(40rem);
+      opacity:0;
+      visibility:hidden;
+    }
+
+    .mobileNav.show{
+      transform:translatex(0rem);
+      opacity:1;
+      visibility:visible;
     }
 
     nav ul {
