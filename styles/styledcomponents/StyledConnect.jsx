@@ -21,22 +21,22 @@ const StyledConnect = styled.div`
   }
 
   @media only screen and (max-width: 850px) {
-    gap:2rem;
+    // gap:2rem;
   }
 
   @media only screen and (max-width: 600px) {
-    gap:1rem;
+    // gap:1rem;
 
     a {
-      font-size: 1.5rem;
-      padding: 0.6rem;
+      // font-size: 1.5rem;
+      // padding: 0.6rem;
     }
   }
 
-  @media only screen and (max-width: 470px) {
+  @media only screen and (max-width: 400px) {
     a {
-      font-size: 1.5rem;
-      padding: 0.4rem;
+      // font-size: 1.5rem;
+      // padding: 0.4rem;
     }
   }
 `;

@@ -94,10 +94,6 @@ const StyledNavbar = styled.header`
       display:flex;
     }
 
-    .mobile .logo{
-      // z-index:-1;
-    }
-
     .menu{
       position:fixed;
       top:0;
@@ -124,7 +120,7 @@ const StyledNavbar = styled.header`
 
     .mobileNav{
       background:#3e3e3e;
-      width:60%;
+      width:35%;
       height:100%;
       position:absolute;
       right:0;
@@ -154,6 +150,10 @@ const StyledNavbar = styled.header`
       padding-top:5rem;
     }
 
+    nav a{
+      font-size:3rem;
+    }
+
     .toggle{
       font-size:3rem;
       z-index:10;
@@ -161,19 +161,27 @@ const StyledNavbar = styled.header`
     }
   }
 
-  @media only screen and (max-width: 550px) {
+  @media only screen and (max-width: 800px) {
     .mobileNav{
+      width:45%;
     }
   }
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 600px) {
     .mobileNav{
-      padding:0rem 1rem 25rem;
+      width:55%;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .mobileNav{
       width:70%;
     }
+  }
 
-    nav a {
-    font-size:3rem;
+  @media only screen and (max-width: 375px) {
+    .mobileNav{
+      width:80%;
     }
   }
 `;
