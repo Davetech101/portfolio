@@ -5,6 +5,7 @@ const StyledConnect = styled.div`
   gap: 3rem;
   justify-content: space-between;
   align-items: center;
+  max-width:25rem;
 
   a{
     font-size:2rem;

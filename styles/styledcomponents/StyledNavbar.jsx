@@ -35,6 +35,7 @@ const StyledNavbar = styled.header`
     display: flex;
     align-items: center;
     gap: 4rem;
+    margin-top:1rem;
   }
 
   nav a {
@@ -66,7 +67,6 @@ const StyledNavbar = styled.header`
   .logo {
     font-size: 3rem;
     font-family: 'Dancing Script', cursive;
-    margin-bottom:1rem;
   }
 
   .logo h2{
