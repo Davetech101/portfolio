@@ -314,7 +314,7 @@ const StyledAboutMe = styled.section`
 
     .knight {
       font-size: 80rem;
-      top: 2rem;
+      top: -20rem;
       left: -13rem;
     }
 
@@ -330,16 +330,23 @@ const StyledAboutMe = styled.section`
     }
   
     a {
-      font-size: 2rem;
-      font-family: "Sono", sans-serif;
-      display: flex;
-      z-index: 2;
-      position: relative;
-      display: flex;
-      align-items: center;
-      transition:all .3s;
-      font-family: "Permanent Marker", cursive;
+      font-size: 1.5rem;
     }
+  }
+
+  @media only screen and (max-width:1000px){
+  padding: 2rem;
+  main {
+    max-width: 60rem;
+  }
+
+    .text {
+      margin-left: 2rem;
+    }
+  }
+
+  h2 div {
+    margin-left: 2rem;
   }
 `;
 
