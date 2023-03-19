@@ -28,6 +28,7 @@ const Navbar = () => {
     return (
       <li key={link.href}>
         <Link
+          onClick={() => setShowNav(false)}
           passHref
           href={link.href}
           className={
@@ -88,7 +89,10 @@ const Navbar = () => {
         </button>
 
         <div className="menu">
-          <div onClick={() => setShowNav(false)} className={showNav ? "modal show" : "modal"}></div>
+          <div
+            onClick={() => setShowNav(false)}
+            className={showNav ? "modal show" : "modal"}
+          ></div>
 
           <div className={showNav ? "mobileNav show" : "mobileNav"}>
             <nav>
