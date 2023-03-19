@@ -88,7 +88,7 @@ const Navbar = () => {
         </button>
 
         <div className="menu">
-          <div className={showNav ? "modal show" : "modal"}></div>
+          <div onClick={() => setShowNav(false)} className={showNav ? "modal show" : "modal"}></div>
 
           <div className={showNav ? "mobileNav show" : "mobileNav"}>
             <nav>

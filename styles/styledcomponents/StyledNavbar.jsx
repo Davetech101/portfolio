@@ -92,17 +92,13 @@ const StyledNavbar = styled.header`
       display: flex;
     }
 
-    //   .mobile .logo{
-    //     z-index:1;
-    //   }
-
     .menu {
       position: fixed;
       top: 0;
       right: 0;
       width: 100vw;
       height: 100vh;
-      // visibility:hidden;
+      visibility:hidden;
     }
 
     .modal {
@@ -152,7 +148,7 @@ const StyledNavbar = styled.header`
       flex-direction: column;
       align-items: center;
       gap: 4rem;
-      padding-top: 5rem;
+      padding-top: 9rem;
     }
 
     nav a {
@@ -166,29 +162,29 @@ const StyledNavbar = styled.header`
     }
   }
 
-  // @media only screen and (max-width: 800px) {
-  //   .mobileNav {
-  //     width: 45%;
-  //   }
-  // }
+  @media only screen and (max-width: 800px) {
+    .mobileNav {
+      width: 45%;
+    }
+  }
 
-  // @media only screen and (max-width: 600px) {
-  //   .mobileNav {
-  //     width: 55%;
-  //   }
-  // }
+  @media only screen and (max-width: 600px) {
+    .mobileNav {
+      width: 55%;
+    }
+  }
 
-  // @media only screen and (max-width: 500px) {
-  //   .mobileNav {
-  //     width: 70%;
-  //   }
-  // }
+  @media only screen and (max-width: 500px) {
+    .mobileNav {
+      width: 70%;
+    }
+  }
 
-  // @media only screen and (max-width: 375px) {
-  //   .mobileNav {
-  //     width: 80%;
-  //   }
-  // }
+  @media only screen and (max-width: 375px) {
+    .mobileNav {
+      width: 80%;
+    }
+  }
 `;
 
 export default StyledNavbar;
