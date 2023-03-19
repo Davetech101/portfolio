@@ -256,7 +256,7 @@ const StyledHero = styled.section`
 
     .po,
     .pe {
-      font-size: 1rem;
+      font-size: 1.7rem;
     }
   }
 
@@ -309,6 +309,11 @@ const StyledHero = styled.section`
 
   @media only screen and (max-width: 450px) {
     padding: 0rem 1rem 1rem 1rem;
+
+    .po,
+    .pe {
+      font-size: 1rem;
+    }
 
     p {
       font-size: 2rem;

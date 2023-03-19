@@ -400,6 +400,8 @@ const StyledAboutMe = styled.section`
 
   @media only screen and (max-width: 400px) {
     padding:1rem;
+    padding-bottom:6rem;
+
     img {
       width: 12rem;
     }
