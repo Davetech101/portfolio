@@ -72,7 +72,7 @@ const Hero = () => {
         />
 
         <p>
-          {/* A <span className="underline">well-versed</span>  */}and{" "}
+          A <span className="underline">well-versed</span> and{" "}
           <span className="underline">creative</span> developer who is fervy about creating and contributing to{" "}
           <span className="underline">beautiful</span>,{" "}
           <span className="underline">interactive</span> and{" "}
