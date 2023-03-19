@@ -253,6 +253,10 @@ const StyledHero = styled.section`
     p {
       font-size: 2.6rem;
     }
+
+    main {
+      max-width: 50rem;
+    }
   }
 
   @media only screen and (max-width: 650px) {
