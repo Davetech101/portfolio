@@ -92,9 +92,9 @@ const StyledNavbar = styled.header`
       display: flex;
     }
 
-    .mobile .logo{
-      z-index:1;
-    }
+    //   .mobile .logo{
+    //     z-index:1;
+    //   }
 
     .menu {
       position: fixed;
@@ -105,16 +105,19 @@ const StyledNavbar = styled.header`
       // visibility:hidden;
     }
 
-    .overlay {
+    .modal {
       background: rgba(0, 0, 0, 0.7);
       width: 100vw;
       height: 100vh;
       opacity: 0;
       visibility: hidden;
       transition: all 0.5s;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
 
-    .overlay.show {
+    .modal.show {
       opacity: 1;
       visibility: visible;
       z-index: 10;
@@ -163,29 +166,29 @@ const StyledNavbar = styled.header`
     }
   }
 
-  @media only screen and (max-width: 800px) {
-    .mobileNav {
-      width: 45%;
-    }
-  }
+  // @media only screen and (max-width: 800px) {
+  //   .mobileNav {
+  //     width: 45%;
+  //   }
+  // }
 
-  @media only screen and (max-width: 600px) {
-    .mobileNav {
-      width: 55%;
-    }
-  }
+  // @media only screen and (max-width: 600px) {
+  //   .mobileNav {
+  //     width: 55%;
+  //   }
+  // }
 
-  @media only screen and (max-width: 500px) {
-    .mobileNav {
-      width: 70%;
-    }
-  }
+  // @media only screen and (max-width: 500px) {
+  //   .mobileNav {
+  //     width: 70%;
+  //   }
+  // }
 
-  @media only screen and (max-width: 375px) {
-    .mobileNav {
-      width: 80%;
-    }
-  }
+  // @media only screen and (max-width: 375px) {
+  //   .mobileNav {
+  //     width: 80%;
+  //   }
+  // }
 `;
 
 export default StyledNavbar;
