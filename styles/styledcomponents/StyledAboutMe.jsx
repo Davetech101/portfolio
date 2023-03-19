@@ -332,12 +332,20 @@ const StyledAboutMe = styled.section`
     a {
       font-size: 1.5rem;
     }
+
+    .knight {
+      display: none;
+    }
   }
 
   @media only screen and (max-width: 1000px) {
     padding: 2rem;
     main {
       max-width: 55rem;
+    }
+
+    .knight {
+      display: none;
     }
 
     .text {
@@ -361,10 +369,6 @@ const StyledAboutMe = styled.section`
 
     h2 div {
       margin-left: 2rem;
-    }
-
-    .knight {
-      display: none;
     }
 
     p {
