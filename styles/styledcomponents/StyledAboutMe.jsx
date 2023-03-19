@@ -387,6 +387,15 @@ const StyledAboutMe = styled.section`
     img {
       width: 17rem;
     }
+
+    .po,
+    .pe {
+      font-size: 1rem;
+    }
+
+    main {
+      max-width: 100%;
+    }
   }
 
   @media only screen and (max-width: 400px) {

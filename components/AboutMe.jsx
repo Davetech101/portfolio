@@ -42,7 +42,7 @@ const About = () => {
           </p>
           <p>
             A well-organised, problem solving indivdual who pays
-            high attention to details. A Football fan, poetryy lover and chess player. Currently undergoing my BSc in Electronics and
+            high attention to details. A Football fan, poetry lover and chess player. Currently undergoing my BSc in Electronics and
             Computer Engineering at the University of Port Harcourt, Nigeria!
           </p>
           <p>
