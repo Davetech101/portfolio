@@ -54,9 +54,9 @@ const Hero = () => {
       <main className="relative">
         <span className="po flex">{"<p>"}</span>
 
-        <span className="absolute w-0.5 h-60 bg-orange mb-5 -top-20 -left-7 vertical"></span>
+        <span className="absolute w-0.5 h-60 bg-orange vertical"></span>
 
-        <span className="absolute h-0.5 w-60 bg-orange mb-5 -top-7 -left-20 horizontal"></span>
+        <span className="absolute h-0.5 w-60 bg-orange horizontal"></span>
 
         <p className="inline mr-5">I am a</p>
 

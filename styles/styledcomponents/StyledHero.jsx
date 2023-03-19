@@ -41,10 +41,14 @@ const StyledHero = styled.section`
 
   .vertical {
     animation: vertical 1s;
+    top:-5rem;
+    left:-1rem;
   }
 
   .horizontal {
     animation: horizontal 1.5s;
+    left:-5rem;
+    top:-1rem;
   }
 
   @keyframes vertical {
@@ -265,10 +269,27 @@ const StyledHero = styled.section`
   }
 
   @media only screen and (max-width: 500px) {
-    padding: 4rem 2rem 4rem 6rem;
+    padding: 2rem 2rem 2rem 6rem;
 
     p {
       font-size: 2.2rem;
+      margin-left: 1rem;
+    }
+
+    .cta{
+      margin-left: 1rem;
+    }
+
+    .vertical{
+      position:absolute;
+      top:2rem;
+      height:10rem;
+    }
+
+    .horizontal{
+      top:4rem;
+      left:-3rem;
+      width:10rem;
     }
   }
 `;
