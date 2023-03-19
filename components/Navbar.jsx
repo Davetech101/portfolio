@@ -28,6 +28,7 @@ const Navbar = () => {
     return (
       <li key={link.href}>
         <Link
+        passHref
           href={link.href}
           className={
             router.pathname === link.href
