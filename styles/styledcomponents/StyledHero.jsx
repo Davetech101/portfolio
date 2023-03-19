@@ -254,8 +254,9 @@ const StyledHero = styled.section`
       font-size: 2.6rem;
     }
 
-    main {
-      max-width: 50rem;
+    .po,
+    .pe {
+      font-size: 1rem;
     }
   }
 
