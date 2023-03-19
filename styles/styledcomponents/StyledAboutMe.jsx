@@ -91,12 +91,12 @@ const StyledAboutMe = styled.section`
     position: relative;
     display: flex;
     align-items: center;
-    transition:all .3s;
+    transition: all 0.3s;
     font-family: "Permanent Marker", cursive;
   }
 
-  a:hover{
-    opacity:.5;
+  a:hover {
+    opacity: 0.5;
   }
 
   .next {
@@ -121,89 +121,89 @@ const StyledAboutMe = styled.section`
     animation: img 2s;
   }
 
-  .images.animate{
-    opacity:.3;
-    transition:all .2s;
+  .images.animate {
+    opacity: 0.3;
+    transition: all 0.2s;
   }
-  
+
   @keyframes img1b {
     0% {
-    //   transform: translate(0);
-    transform:rotate(0);
-    //   opacity:0;
+      //   transform: translate(0);
+      transform: rotate(0);
+      //   opacity:0;
     }
 
     50% {
-    //   transform: translate(100%, 100%);
-    transform:rotate(180deg);
-    //   opacity:0.3;
+      //   transform: translate(100%, 100%);
+      transform: rotate(180deg);
+      //   opacity:0.3;
     }
 
     100% {
-    //   transform: translate(0);
-    transform:rotate(0);
-    //   opacity:1;
+      //   transform: translate(0);
+      transform: rotate(0);
+      //   opacity:1;
     }
   }
 
   @keyframes img2b {
     0% {
-    //   transform: translate(0);
-    transform:rotate(0);
-    //   opacity:0;
+      //   transform: translate(0);
+      transform: rotate(0);
+      //   opacity:0;
     }
 
     50% {
-    //   transform: translate(-100%, 100%);
-    transform:rotate(-180deg);
-    //   opacity:.3;
+      //   transform: translate(-100%, 100%);
+      transform: rotate(-180deg);
+      //   opacity:.3;
     }
 
     100% {
-    //   transform: translate(0);
-    transform:rotate(0);
-    //   opacity:1;
+      //   transform: translate(0);
+      transform: rotate(0);
+      //   opacity:1;
     }
   }
 
   @keyframes img3b {
     0% {
-    //   transform: translate(0);
-    transform:rotate(0);
-    //   opacity:0;
+      //   transform: translate(0);
+      transform: rotate(0);
+      //   opacity:0;
     }
 
     50% {
-    //   transform: translate(100%, -100%);
-    transform:rotate(180deg);
-    //   opacity:.3;
+      //   transform: translate(100%, -100%);
+      transform: rotate(180deg);
+      //   opacity:.3;
     }
 
     100% {
-    //   transform: translate(0);
-    transform:rotate(0);
-    //   opacity:1;
+      //   transform: translate(0);
+      transform: rotate(0);
+      //   opacity:1;
     }
   }
 
   @keyframes img4b {
     0% {
-    //   transform: translate(0);
-    transform:rotate(0);
-    //   opacity:0;
+      //   transform: translate(0);
+      transform: rotate(0);
+      //   opacity:0;
     }
 
     50% {
-    //   transform: translate(-100%, -100%);
-    transform:rotate(-180deg);
+      //   transform: translate(-100%, -100%);
+      transform: rotate(-180deg);
 
-    //   opacity:.3;
+      //   opacity:.3;
     }
 
     100% {
-    //   transform: translate(0);
-    transform:rotate(0);
-    //   opacity:1;
+      //   transform: translate(0);
+      transform: rotate(0);
+      //   opacity:1;
     }
   }
 
@@ -242,72 +242,72 @@ const StyledAboutMe = styled.section`
   @keyframes img1 {
     0% {
       transform: translate(0);
-      opacity:0;
+      opacity: 0;
     }
 
     50% {
       transform: translate(100%, 100%);
-      opacity:0.3;
+      opacity: 0.3;
     }
 
     100% {
       transform: translate(0);
-      opacity:1;
+      opacity: 1;
     }
   }
 
   @keyframes img2 {
     0% {
       transform: translate(0);
-      opacity:0;
+      opacity: 0;
     }
 
     50% {
       transform: translate(-100%, 100%);
-      opacity:.3;
+      opacity: 0.3;
     }
 
     100% {
       transform: translate(0);
-      opacity:1;
+      opacity: 1;
     }
   }
 
   @keyframes img3 {
     0% {
       transform: translate(0);
-      opacity:0;
+      opacity: 0;
     }
 
     50% {
       transform: translate(100%, -100%);
-      opacity:.3;
+      opacity: 0.3;
     }
 
     100% {
       transform: translate(0);
-      opacity:1;
+      opacity: 1;
     }
   }
 
   @keyframes img4 {
     0% {
       transform: translate(0);
-      opacity:0;
+      opacity: 0;
     }
 
     50% {
       transform: translate(-100%, -100%);
-      opacity:.3;
+      opacity: 0.3;
     }
 
     100% {
       transform: translate(0);
-      opacity:1;
+      opacity: 1;
     }
   }
 
-  @media only screen and (max-width:1200px){
+  @media only screen and (max-width: 1200px) {
     main {
       max-width: 60rem;
     }
@@ -318,8 +318,8 @@ const StyledAboutMe = styled.section`
       left: -13rem;
     }
 
-    img{
-      width:15rem;
+    img {
+      width: 15rem;
     }
 
     p {
@@ -328,17 +328,17 @@ const StyledAboutMe = styled.section`
       line-height: 2rem;
       letter-spacing: 0.1rem;
     }
-  
+
     a {
       font-size: 1.5rem;
     }
   }
 
-  @media only screen and (max-width:1000px){
-  padding: 2rem;
-  main {
-    max-width: 60rem;
-  }
+  @media only screen and (max-width: 1000px) {
+    padding: 2rem;
+    main {
+      max-width: 55rem;
+    }
 
     .text {
       margin-left: 2rem;
@@ -347,6 +347,25 @@ const StyledAboutMe = styled.section`
 
   h2 div {
     margin-left: 2rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    padding: 2rem;
+    main {
+      max-width: 50rem;
+    }
+
+    .text {
+      margin-left: 2rem;
+    }
+  }
+
+  h2 div {
+    margin-left: 2rem;
+  }
+
+  .knight {
+    display:none;
   }
 `;
 
