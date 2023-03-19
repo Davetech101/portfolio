@@ -309,7 +309,36 @@ const StyledAboutMe = styled.section`
 
   @media only screen and (max-width:1200px){
     main {
-      // max-width: 60rem;
+      max-width: 60rem;
+    }
+
+    .knight {
+      font-size: 80rem;
+      top: 2rem;
+      left: -13rem;
+    }
+
+    img{
+      width:15rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      line-height: 2rem;
+      letter-spacing: 0.1rem;
+    }
+  
+    a {
+      font-size: 2rem;
+      font-family: "Sono", sans-serif;
+      display: flex;
+      z-index: 2;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition:all .3s;
+      font-family: "Permanent Marker", cursive;
     }
   }
 `;
