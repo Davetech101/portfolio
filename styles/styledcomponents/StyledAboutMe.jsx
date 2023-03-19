@@ -390,8 +390,21 @@ const StyledAboutMe = styled.section`
   }
 
   @media only screen and (max-width: 400px) {
+    padding:1rem;
     img {
       width: 12rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .text {
+      margin-left: 1rem;
+    }
+
+    h2 div {
+      margin-left: 1rem;
     }
   }
 `;
