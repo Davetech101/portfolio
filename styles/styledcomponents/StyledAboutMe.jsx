@@ -358,25 +358,41 @@ const StyledAboutMe = styled.section`
     .text {
       margin-left: 2rem;
     }
+
+    h2 div {
+      margin-left: 2rem;
+    }
+
+    .knight {
+      display: none;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      line-height: 2rem;
+      letter-spacing: -1px;
+    }
+
+    img {
+      width: 12rem;
+    }
   }
 
-  h2 div {
-    margin-left: 2rem;
+  @media only screen and (max-width: 800px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 6rem;
+
+    img {
+      width: 17rem;
+    }
   }
 
-  .knight {
-    display:none;
-  }
-
-  p {
-    font-size: 1.3rem;
-    margin-bottom: .5rem;
-    line-height: 2rem;
-    letter-spacing: -1px;
-  }
-
-  img{
-    width:12rem;
+  @media only screen and (max-width: 400px) {
+    img {
+      width: 12rem;
+    }
   }
 `;
 

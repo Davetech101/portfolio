@@ -6,6 +6,7 @@ const SSection = styled.section`
 
   @media only screen and (max-width: 1000px) {
   overflow: unset;
+  overflow-x:hidden;
   }
 
 `;
