@@ -125,26 +125,7 @@ const StyledAboutMe = styled.section`
     opacity:.3;
     transition:all .2s;
   }
-
-//   .images.animate .img1 {
-//     animation: img1b .5s;
-//   }
-
-//   .images.animate .img2 {
-//     animation: img2b 1s;
-//     // animation-delay:2s;
-//   }
-
-//   .images.animate .img3 {
-//     animation: img3b 1.5s;
-//     // animation-delay:2s;
-//   }
-
-//   .images.animate .img4 {
-//     animation: img4b 2s;
-//     // animation-delay:2s;
-//   }
-
+  
   @keyframes img1b {
     0% {
     //   transform: translate(0);
@@ -323,6 +304,12 @@ const StyledAboutMe = styled.section`
     100% {
       transform: translate(0);
       opacity:1;
+    }
+  }
+
+  @media only screen and (max-width:1200px){
+    main {
+      // max-width: 60rem;
     }
   }
 `;
