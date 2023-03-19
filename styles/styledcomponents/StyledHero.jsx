@@ -41,14 +41,14 @@ const StyledHero = styled.section`
 
   .vertical {
     animation: vertical 1s;
-    top:-5rem;
-    left:-1rem;
+    top: -5rem;
+    left: -1rem;
   }
 
   .horizontal {
     animation: horizontal 1.5s;
-    left:-5rem;
-    top:-1rem;
+    left: -5rem;
+    top: -1rem;
   }
 
   @keyframes vertical {
@@ -223,11 +223,14 @@ const StyledHero = styled.section`
     p {
       font-size: 3rem;
     }
+
+    .marquee-1 {
+      top: 45rem;
+    }
   }
 
   @media only screen and (max-width: 850px) {
     padding: 4rem 3rem 4rem 8rem;
-
 
     p {
       font-size: 2.8rem;
@@ -266,30 +269,71 @@ const StyledHero = styled.section`
     p {
       font-size: 2.2rem;
     }
+
+    .marquee-1 li {
+      margin: 0 2rem;
+      font-size: 1.5rem;
+      letter-spacing: .5rem;
+    }
   }
 
   @media only screen and (max-width: 500px) {
-    padding: 2rem 2rem 2rem 6rem;
+    padding: 0rem 1rem 1rem 1rem;
 
     p {
-      font-size: 2.2rem;
       margin-left: 1rem;
     }
 
-    .cta{
+    .cta {
       margin-left: 1rem;
     }
 
-    .vertical{
-      position:absolute;
-      top:2rem;
-      height:10rem;
+    .vertical {
+      display:none;
     }
 
-    .horizontal{
-      top:4rem;
-      left:-3rem;
-      width:10rem;
+    .horizontal {
+      display:none;
+    }
+
+    main > div {
+      font-size: 2.5rem;
+      display: inline;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    padding: 0rem 1rem 1rem 1rem;
+
+    p {
+      font-size: 2rem;
+      margin-left: 1rem;
+      word-wrap: break-word;
+      letter-spacing:1px;
+    }
+
+    .cta {
+      margin-top: 1rem;
+      display:block;
+    }
+
+    .vertical {
+      position: absolute;
+      top: 1.5rem;
+      display:none;
+      height: 10rem;
+    }
+
+    .horizontal {
+      top: 3.5rem;
+      left: -3rem;
+      width: 10rem;
+      display:none;
+    }
+
+    main > div {
+      font-size: 2rem;
+      display: inline;
     }
   }
 `;
