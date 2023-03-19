@@ -367,6 +367,17 @@ const StyledAboutMe = styled.section`
   .knight {
     display:none;
   }
+
+  p {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    line-height: 2rem;
+    letter-spacing: -1px;
+  }
+
+  img{
+    width:12rem;
+  }
 `;
 
 export default StyledAboutMe;
