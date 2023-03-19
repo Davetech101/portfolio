@@ -222,7 +222,8 @@ const StyledHero = styled.section`
   }
 
   @media only screen and (max-width: 850px) {
-    padding: 4rem 8rem;
+    padding: 4rem 3rem 4rem 8rem;
+
 
     p {
       font-size: 2.8rem;
@@ -230,9 +231,8 @@ const StyledHero = styled.section`
     }
 
     a {
-      font-size: 2rem;
       padding: 0.5rem 1rem;
-      font-size: 2.8rem;
+      font-size: 2rem;
     }
 
     .cta {
@@ -241,20 +241,34 @@ const StyledHero = styled.section`
   }
 
   @media only screen and (max-width: 715px) {
-    padding: 4rem 8rem;
+    padding: 4rem 3rem 4rem 8rem;
 
     p {
       font-size: 2.6rem;
-      margin-left: 3rem;
     }
+  }
 
-    a {
-      font-size: 2rem;
-      padding: 0.5rem 1rem;
+  @media only screen and (max-width: 650px) {
+    padding: 4rem 2rem 4rem 6rem;
+
+    p {
+      font-size: 2.4rem;
     }
+  }
 
-    .cta {
-      margin-left: 3rem;
+  @media only screen and (max-width: 550px) {
+    padding: 4rem 2rem 4rem 6rem;
+
+    p {
+      font-size: 2.2rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 4rem 2rem 4rem 6rem;
+
+    p {
+      font-size: 2.2rem;
     }
   }
 `;
