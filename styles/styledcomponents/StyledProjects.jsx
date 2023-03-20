@@ -268,16 +268,19 @@ const StyledProjects = styled.div`
 
     .img1 {
       position: absolute;
+      left: -3rem;
     }
   
     .img2 {
       z-index: 2;
+      bottom:-2rem;
+      position:relative;
     }
   
     .img3 {
       position: absolute;
       top: 6rem;
-      right: -4rem;
+      right: -6rem;
     }
   }
 
