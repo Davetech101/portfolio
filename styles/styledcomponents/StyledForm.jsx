@@ -5,7 +5,7 @@ const StyledForm = styled.section`
   padding: 4rem;
   position: relative;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
 
   .part1 {
@@ -100,7 +100,7 @@ const StyledForm = styled.section`
     border: 1px solid #f19c0036;
     position: relative;
     overflow: hidden;
-    text-align:center;
+    text-align: center;
   }
 
   a::before {
@@ -148,7 +148,7 @@ const StyledForm = styled.section`
 
   @media only screen and (max-width: 1000px) {
     padding: 2rem;
-    align-items:center;
+    align-items: center;
 
     form {
       margin: 2rem 2rem;
@@ -156,13 +156,14 @@ const StyledForm = styled.section`
 
     h2 {
       font-size: 3rem;
-      margin-left: 5rem;
+      margin-left: 2rem;
     }
   }
 
   @media only screen and (max-width: 900px) {
-    .part1, .part2{
-      width:80%;
+    .part1,
+    .part2 {
+      width: 80%;
     }
 
     form {
@@ -171,20 +172,50 @@ const StyledForm = styled.section`
   }
 
   @media only screen and (max-width: 800px) {
-    .part1, .part2{
-      width:90%;
+    .part1,
+    .part2 {
+      width: 90%;
     }
   }
 
   @media only screen and (max-width: 650px) {
-    .part1, .part2{
-      width:100%;
+    .part1,
+    .part2 {
+      width: 100%;
     }
+
+    .po,
+  .pe {
+    font-size: 1rem;
+  }
+
   }
 
   @media only screen and (max-width: 550px) {
-    .part1, .part2{
-      width:100%;
+    .input {
+      padding: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 1rem;
+    .input {
+      padding: 1rem;
+    }
+
+    form, h2{
+      margin:1rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 1rem;
+    .input {
+      padding: 1rem;
+    }
+
+    form, h2{
+      margin:1rem;
     }
   }
 `;
