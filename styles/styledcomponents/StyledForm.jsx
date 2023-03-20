@@ -160,17 +160,33 @@ const StyledForm = styled.section`
     }
   }
 
-  @media only screen and (max-width: 1000px) {
-    padding: 2rem;
-    align-items:center;
-
-    form {
-      margin: 2rem 2rem;
+  @media only screen and (max-width: 900px) {
+    .part1, .part2{
+      width:80%;
     }
 
-    h2 {
-      font-size: 3rem;
-      margin-left: 5rem;
+    form {
+      max-width: unset;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .part1, .part2{
+      width:90%;
+    }
+
+    form {
+      max-width: unset;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .part1, .part2{
+      width:90%;
+    }
+
+    form {
+      max-width: unset;
     }
   }
 `;
