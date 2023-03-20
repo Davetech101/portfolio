@@ -265,6 +265,26 @@ const StyledProjects = styled.div`
     a {
       font-size: 1.3rem;
     }
+
+    .img1 {
+      position: absolute;
+    }
+  
+    .img2 {
+      z-index: 2;
+    }
+  
+    .img3 {
+      position: absolute;
+      top: 6rem;
+      right: -4rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .typography {
+      margin-top: 10rem;
+    }
   }
 `;
 
