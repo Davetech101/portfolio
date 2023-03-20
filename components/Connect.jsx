@@ -12,17 +12,17 @@ const Connect = () => {
   const media = [
     {
       name: "LinkedIn",
-      href: "",
+      href: "https://www.linkedin.com/in/david-ogaranya-enomah-133b60223/",
       svg: <GrLinkedinOption />,
     },
     {
       name: "Github",
-      href: "",
+      href: "https://github.com/Davetech101",
       svg: <BsGithub />,
     },
     {
       name: "Twitter",
-      href: "",
+      href: "https://twitter.com/Og_rhoze",
       svg: <AiOutlineTwitter />,
     },
     {
@@ -36,6 +36,7 @@ const Connect = () => {
     <StyledConnect>
       {media.map((medium, idx) => (
         <Link
+        target="_black"
           key={idx}
           href={medium.href}
         >{medium.svg}

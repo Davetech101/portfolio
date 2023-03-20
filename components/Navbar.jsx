@@ -11,6 +11,10 @@ const Navbar = () => {
   const router = useRouter();
   const navLinks = [
     {
+      title: "Home",
+      href: "/",
+    },
+    {
       title: "About Me",
       href: "/about",
     },

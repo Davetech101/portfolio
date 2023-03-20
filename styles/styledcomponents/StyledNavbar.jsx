@@ -128,7 +128,7 @@ const StyledNavbar = styled.header`
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      gap:3rem;
       padding: 0rem 2rem 15rem;
       transition: all 0.5s;
       transform: translatex(40rem);
@@ -148,11 +148,11 @@ const StyledNavbar = styled.header`
       flex-direction: column;
       align-items: center;
       gap: 4rem;
-      padding-top: 9rem;
+      padding-top: 5rem;
     }
 
     nav a {
-      font-size: 3rem;
+      font-size: 2rem;
     }
 
     .toggle {

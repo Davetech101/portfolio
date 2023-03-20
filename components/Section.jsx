@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
-const SSection = styled.section`
-  overflow: hidden;
+const Section = ({ type, children }) => {
+  const SSection = styled.section`
+    overflow: hidden;
   height: 100vh;
 
-  @media only screen and (max-width: 1000px) {
-  overflow: unset;
-  overflow-x:hidden;
+    @media only screen and (max-width: 1000px) {
+    overflow: unset;
+    overflow-x: hidden;
+    
+    overflow: ${props => (type === "home" ? `hidden` : `auto`)};
   }
-
-`;
-const Section = ({ children }) => {
-  return <SSection>{children}</SSection>;
-};
+`
+  return <SSection>{children}</SSection>
+}
 
 export default Section;
