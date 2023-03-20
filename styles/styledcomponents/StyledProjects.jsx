@@ -240,6 +240,14 @@ const StyledProjects = styled.div`
       font-size: 3rem;
     }
 
+    .images {
+      animation: unset;
+    }
+
+    .projects{
+      margin-top:0rem;
+    }
+
     .project {
       margin-bottom: 5rem;
     }
@@ -250,33 +258,38 @@ const StyledProjects = styled.div`
 
     h3 {
       font-size: 2rem;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
-  
+
     small {
       font-size: 1.6rem;
       margin-bottom: 1rem;
     }
-  
+
     p {
       font-size: 1.8rem;
     }
-  
+
     a {
       font-size: 1.3rem;
+    }
+
+    img {
+      transform: scale(0.5);
+      outline-offset: .5rem;
     }
 
     .img1 {
       position: absolute;
       left: -3rem;
     }
-  
+
     .img2 {
       z-index: 2;
-      bottom:-2rem;
-      position:relative;
+      bottom: -2rem;
+      position: relative;
     }
-  
+
     .img3 {
       position: absolute;
       top: 6rem;
