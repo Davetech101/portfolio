@@ -82,7 +82,7 @@ const Form = () => {
         <span className="po">{"<form>"}</span>
 
         <form
-          action="mailto:enomahog@gmail.com" 
+          action="mailto:enomahog@gmail.com"
           method="post"
           enctype="text/plain"
           className=""

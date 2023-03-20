@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledForm = styled.section`
-  margin-top: 5rem;
+  margin-top: 8rem;
   padding: 4rem;
   position: relative;
   display: flex;
@@ -9,7 +9,7 @@ const StyledForm = styled.section`
   justify-content: center;
 
   .part1 {
-    width: 50%;
+    width: 70%;
   }
 
   .po,
@@ -50,12 +50,12 @@ const StyledForm = styled.section`
 
   @keyframes form {
     0% {
-      transform: translateX(50rem);
+      transform: translateX(-50rem);
       opacity: 0;
     }
 
     75% {
-      transform: translateX(-2rem);
+      transform: translateX(2rem);
       opacity: 0.75;
     }
 
@@ -100,6 +100,7 @@ const StyledForm = styled.section`
     border: 1px solid #f19c0036;
     position: relative;
     overflow: hidden;
+    text-align:center;
   }
 
   a::before {
@@ -145,8 +146,9 @@ const StyledForm = styled.section`
     right: -10rem;
   }
 
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1000px) {
     padding: 2rem;
+    align-items:center;
 
     form {
       margin: 2rem 2rem;
@@ -155,7 +157,20 @@ const StyledForm = styled.section`
     h2 {
       font-size: 3rem;
       margin-left: 5rem;
-      font-family: "Permanent Marker", cursive;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    padding: 2rem;
+    align-items:center;
+
+    form {
+      margin: 2rem 2rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-left: 5rem;
     }
   }
 `;
