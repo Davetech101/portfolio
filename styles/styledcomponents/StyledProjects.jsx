@@ -16,7 +16,6 @@ const StyledProjects = styled.div`
     font-family: "Permanent Marker", cursive;
     color: #f19c00;
     font-size: 6rem;
-    // display: inline;
   }
 
   h2 div {
@@ -211,20 +210,6 @@ const StyledProjects = styled.div`
       margin-bottom: 10rem;
     }
 
-    .img1 {
-      position: absolute;
-    }
-
-    .img2 {
-      z-index: 2;
-    }
-
-    .img3 {
-      position: absolute;
-      top: 6rem;
-      right: -4rem;
-    }
-
     .typography {
       width: 100%;
       margin-top: 3rem;
@@ -241,7 +226,55 @@ const StyledProjects = styled.div`
   }
 
   @media only screen and (max-width: 550px) {
-    padding: 10rem 5rem;
+    padding: 10rem 2rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    padding: 10rem 2rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    .typography {
+      margin-top: 5rem;
+    }
+
+    h3 {
+      font-family: "Permanent Marker", cursive;
+      font-size: 3rem;
+      color: #f19c00;
+      margin-bottom: 2rem;
+    }
+  
+    small {
+      font-family: "Indie Flower", cursive;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #f19c00;
+      border-left: 1px solid #f19c00;
+      display: inline-block;
+      padding: 0 0.5rem;
+    }
+  
+    p {
+      font-family: "Sono", sans-serif;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    a {
+      font-family: "Indie Flower", cursive;
+      font-size: 1.5rem;
+      border: 1px solid #f19c00;
+      padding: 0.5rem 1rem;
+      margin: 0 1rem 0 0;
+      position: relative;
+    }
   }
 `;
 
