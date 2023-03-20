@@ -121,14 +121,12 @@ const Form = () => {
             onChange={onChange}
           ></textarea>
 
-          <input type="submit" value="Submit" />
-
-          {/* <Link
+          <Link
             className="button"
             href={`mailto:enomahog@gmamil.com?Subject=${formData.subject}&body=${formData.body}`}
           >
-            <button>Submit</button>
-          </Link> */}
+            Submit
+          </Link>
         </form>
 
         <span className="po">{"</form>"}</span>

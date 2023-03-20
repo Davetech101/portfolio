@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 const StyledForm = styled.section`
-  margin-top: 15rem;
+  margin-top: 5rem;
   padding: 4rem;
   position: relative;
   display: flex;
+  flex-direction:column;
   justify-content: center;
 
   .part1 {
@@ -142,6 +143,20 @@ const StyledForm = styled.section`
     position: absolute;
     top: -15rem;
     right: -10rem;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding: 2rem;
+
+    form {
+      margin: 2rem 2rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+      margin-left: 5rem;
+      font-family: "Permanent Marker", cursive;
+    }
   }
 `;
 
