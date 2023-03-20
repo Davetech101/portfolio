@@ -200,7 +200,42 @@ const StyledProjects = styled.div`
   }
 
   @media only screen and (max-width: 830px) {
-    
+    padding: 10rem 5rem;
+
+    h2 div {
+      margin-left: 2rem;
+    }
+
+    .project{
+      flex-direction:column;
+    }
+
+    .img1 {
+      position: absolute;
+    }
+  
+    .img2 {
+      z-index: 2;
+    }
+  
+    .img3 {
+      position: absolute;
+      top: 6rem;
+      right: -4rem;
+    }
+  
+    img:hover {
+      // outline:1rem solid #f19c0036;
+      opacity: 1;
+      z-index: 20;
+      transform: scale(1.2);
+      outline-offset:2rem;
+    }
+  
+    .typography {
+      width: 50%;
+      animation: typo 4s;
+    }
   }
 `;
 
