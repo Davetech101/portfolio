@@ -1,12 +1,26 @@
+import { useState, useEffect } from "react";
 import Hero from "@/components/Hero";
-import Loader from "@/components/Loader";
 import Section from "@/components/Section";
+import Loader from "@/components/Loader";
 
 export default function Home() {
+  const [loading, SetLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      SetLoading(false);
+    }, 2000);
+  }, []);
+
   return (
-    <Section type="home">
-      <Loader/>
-      <Hero />
-    </Section>
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <Section type="home">
+          <Hero />
+        </Section>
+      )}
+    </>
   );
 }
