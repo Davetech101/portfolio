@@ -240,10 +240,6 @@ const StyledProjects = styled.div`
       font-size: 3rem;
     }
 
-    .images {
-      animation: unset;
-    }
-
     .projects{
       margin-top:0rem;
     }
@@ -277,6 +273,11 @@ const StyledProjects = styled.div`
     img {
       transform: scale(0.5);
       outline-offset: .5rem;
+    }
+
+    img:hover {
+      transform: scale(.6);
+      outline-offset: 1rem;
     }
 
     .img1 {

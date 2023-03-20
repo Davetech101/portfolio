@@ -11,7 +11,7 @@ const Projects = () => {
       name: "Coventry hotel",
       tech: "Next js, Typescript",
       about:
-        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum repellat possimus quisquam animi facilis quasi vero nam quod aliquid.",
+        "Book lodgings, go sight seeing, engage in fun activities. Coventry hotel aids tourists get accomodation and amazing tourism experiences.",
       mobile: "/assets/testMob.jpeg",
       desktop: "/assets/testTab.jpeg",
       tablet: "/assets/testDex.jpeg",
@@ -23,7 +23,7 @@ const Projects = () => {
       name: "rest countries",
       tech: "React js, Javascript",
       about:
-        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum repellat possimus quisquam animi facilis quasi vero nam quod aliquid.",
+        "An app that displays all the countries in the world and important information about them. Also allows you to toggle light and dark modes",
       mobile: "/assets/testMob.jpeg",
       desktop: "/assets/testTab.jpeg",
       tablet: "/assets/testDex.jpeg",
@@ -35,7 +35,7 @@ const Projects = () => {
       name: "Entertainment web app",
       tech: "Next js, javascript",
       about:
-        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum repellat possimus quisquam animi facilis quasi vero nam quod aliquid.",
+        "Displays several movies which users can bookmark, filter and search through.",
       mobile: "/assets/testMob.jpeg",
       desktop: "/assets/testTab.jpeg",
       tablet: "/assets/testDex.jpeg",
@@ -47,7 +47,7 @@ const Projects = () => {
       name: "Housing Market",
       tech: "React, Javascript, Firebase",
       about:
-        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum repellat possimus quisquam animi facilis quasi vero nam quod aliquid.",
+        "A real estate application where users can register to find and showcase houses for sale or rent.",
       mobile: "/assets/testMob.jpeg",
       desktop: "/assets/testTab.jpeg",
       tablet: "/assets/testDex.jpeg",
@@ -59,7 +59,7 @@ const Projects = () => {
       name: "Todo",
       tech: "React, Javascript",
       about:
-        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum repellat possimus quisquam animi facilis quasi vero nam quod aliquid.",
+        "Keep track of your daily tasks with this advanced Todo app which can filter your completed and active todos, you can also toggle light and dark modes.",
       mobile: "/assets/testMob.jpeg",
       desktop: "/assets/testTab.jpeg",
       tablet: "/assets/testDex.jpeg",
