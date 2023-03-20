@@ -186,6 +186,10 @@ const StyledProjects = styled.div`
     left: -5rem;
     z-index: 0;
   }
+
+  @media only screen and (max-width: 1100px) {
+    padding: 10rem 5rem;
+  }
 `;
 
 export default StyledProjects;
