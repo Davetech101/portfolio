@@ -208,6 +208,7 @@ const StyledProjects = styled.div`
 
     .project{
       flex-direction:column;
+    margin-bottom: 10rem;
     }
 
     .img1 {
@@ -224,17 +225,32 @@ const StyledProjects = styled.div`
       right: -4rem;
     }
   
-    img:hover {
-      // outline:1rem solid #f19c0036;
-      opacity: 1;
-      z-index: 20;
-      transform: scale(1.2);
-      outline-offset:2rem;
+    .typography {
+      width: 100%;
+      animation: typo 4s;
+      margin-top:6rem;
+    }
+
+    p{
+      font-size:2rem;
+    }
+
+    .wave {
+      font-size: 80rem;
+      color: #f19c0036;
+      position: absolute;
+      top: 0rem;
+      right: -10rem;
+      z-index: 0;
     }
   
-    .typography {
-      width: 50%;
-      animation: typo 4s;
+    .storm {
+      font-size: 50rem;
+      color: #f19c0036;
+      position: absolute;
+      bottom: -30rem;
+      left: -5rem;
+      z-index: 0;
     }
   }
 `;
