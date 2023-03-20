@@ -88,7 +88,7 @@ const Form = () => {
           className=""
           onSubmit={submitHandler}
         >
-          <div className="flex items-center gap-3">
+          <div className="namemail flex items-center gap-3">
             <input
               type="text"
               className="input input1"

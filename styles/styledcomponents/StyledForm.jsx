@@ -192,30 +192,28 @@ const StyledForm = styled.section`
   }
 
   @media only screen and (max-width: 550px) {
-    .input {
+    .input, a {
       padding: 1rem;
     }
   }
 
   @media only screen and (max-width: 500px) {
     padding: 1rem;
-    .input {
-      padding: 1rem;
-    }
 
     form, h2{
       margin:1rem;
+    }
+
+    .namemail{
+      flex-direction:column;
     }
   }
 
-  @media only screen and (max-width: 500px) {
-    padding: 1rem;
-    .input {
-      padding: 1rem;
-    }
+  @media only screen and (max-width: 450px) {
+    padding: .5rem;
 
-    form, h2{
-      margin:1rem;
+    .input, a {
+      padding:1rem;
     }
   }
 `;
