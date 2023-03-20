@@ -29,22 +29,27 @@ const Navbar = () => {
   ];
 
   const nav = navLinks.map((link) => {
+    const handleClick = (e) => {
+      // e.preventDefault();
+      setShowNav(false), router.push(`/${link.href}`);
+    };
+
     return (
       <li key={link.href}>
-        <Link
-          onClick={() => setShowNav(false)}
+        <button
+          onClick={handleClick}
           passHref
-          href={link.href}
+          // href={link.href}
           className={
             router.pathname === link.href
-              ? "active flex gap-3 items-center"
-              : "flex gap-3 items-center"
+              ? "active a flex gap-3 items-center"
+              : "flex a gap-3 items-center"
           }
         >
           <span className="bracket">{"<"}</span>
           {link.title}
           <span className="bracket">{"/>"}</span>
-        </Link>
+        </button>
       </li>
     );
   });

@@ -14,21 +14,19 @@ const Sloader = styled.div`
   justify-content: center;
   align-items: center;
   overflow:hidden;
-  animation:body 2s;
+  animation:body 2.2s;
 
   @keyframes body {
     0% {
       opacity:1;
     }
 
-    99%{
+    90%{
       opacity:1;
-      transform: translate(0);
     }
 
     100% {
       opacity:0;
-      transform:translate(-100%);
     }
 }
   main {

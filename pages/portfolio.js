@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Loader from "@/components/Loader";
-import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 
 export default function Portfolio() {
@@ -9,7 +8,7 @@ export default function Portfolio() {
   useEffect(() => {
     setTimeout(() => {
       SetLoading(false);
-    }, 2000);
+    }, 1500);
   }, []);
   return (
     <>
@@ -17,7 +16,6 @@ export default function Portfolio() {
         <Loader />
       ) : (
         <section className="">
-          <Navbar />
           <Projects />
         </section>
       )}

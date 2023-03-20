@@ -9,7 +9,7 @@ export default function Contact() {
   useEffect(() => {
     setTimeout(() => {
       SetLoading(false);
-    }, 2000);
+    }, 1500);
   }, []);
   return (
     <>

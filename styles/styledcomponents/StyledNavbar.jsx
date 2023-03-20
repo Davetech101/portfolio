@@ -34,11 +34,11 @@ const StyledNavbar = styled.header`
   nav ul {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 1rem;
     margin-top: 1rem;
   }
 
-  nav a {
+  nav .a {
     font-size: 2rem;
     text-transform: capitalize;
     font-family: "Indie Flower", cursive;
@@ -47,19 +47,19 @@ const StyledNavbar = styled.header`
     position: relative;
   }
 
-  nav a .bracket {
+  nav .a .bracket {
     display: inline;
   }
 
-  nav a:hover .bracket {
+  nav .a:hover .bracket {
     color: white;
   }
 
-  nav a:hover {
+  nav .a:hover {
     color: #f19c00;
   }
 
-  nav a.active .bracket {
+  nav .a.active .bracket {
     display: inline;
     color: #f19c00;
   }
