@@ -240,40 +240,30 @@ const StyledProjects = styled.div`
       font-size: 3rem;
     }
 
+    .project {
+      margin-bottom: 5rem;
+    }
+
     .typography {
       margin-top: 5rem;
     }
 
     h3 {
-      font-family: "Permanent Marker", cursive;
-      font-size: 3rem;
-      color: #f19c00;
-      margin-bottom: 2rem;
+      font-size: 2rem;
+      margin-bottom: .5rem;
     }
   
     small {
-      font-family: "Indie Flower", cursive;
-      font-size: 2rem;
+      font-size: 1.6rem;
       margin-bottom: 1rem;
-      border-bottom: 1px solid #f19c00;
-      border-left: 1px solid #f19c00;
-      display: inline-block;
-      padding: 0 0.5rem;
     }
   
     p {
-      font-family: "Sono", sans-serif;
-      font-size: 2rem;
-      margin-bottom: 2rem;
+      font-size: 1.8rem;
     }
   
     a {
-      font-family: "Indie Flower", cursive;
-      font-size: 1.5rem;
-      border: 1px solid #f19c00;
-      padding: 0.5rem 1rem;
-      margin: 0 1rem 0 0;
-      position: relative;
+      font-size: 1.3rem;
     }
   }
 `;
