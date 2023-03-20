@@ -174,19 +174,17 @@ const StyledForm = styled.section`
     .part1, .part2{
       width:90%;
     }
-
-    form {
-      max-width: unset;
-    }
   }
 
   @media only screen and (max-width: 650px) {
     .part1, .part2{
-      width:90%;
+      width:100%;
     }
+  }
 
-    form {
-      max-width: unset;
+  @media only screen and (max-width: 550px) {
+    .part1, .part2{
+      width:100%;
     }
   }
 `;
