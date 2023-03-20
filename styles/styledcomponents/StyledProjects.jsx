@@ -61,8 +61,8 @@ const StyledProjects = styled.div`
     transition: all 0.4s;
     transform: scale(0.6);
     box-shadow: 1px 1px 10px 1px #ffffff4d;
-    outline:1px solid #f19c00;
-    outline-offset:1rem;
+    outline: 1px solid #f19c00;
+    outline-offset: 1rem;
   }
 
   .img1 {
@@ -84,7 +84,7 @@ const StyledProjects = styled.div`
     opacity: 1;
     z-index: 20;
     transform: scale(1.2);
-    outline-offset:2rem;
+    outline-offset: 2rem;
   }
 
   .typography {
@@ -206,52 +206,42 @@ const StyledProjects = styled.div`
       margin-left: 2rem;
     }
 
-    .project{
-      flex-direction:column;
-    margin-bottom: 10rem;
+    .project {
+      flex-direction: column;
+      margin-bottom: 10rem;
     }
 
     .img1 {
       position: absolute;
     }
-  
+
     .img2 {
       z-index: 2;
     }
-  
+
     .img3 {
       position: absolute;
       top: 6rem;
       right: -4rem;
     }
-  
+
     .typography {
       width: 100%;
-      animation: typo 4s;
-      margin-top:6rem;
+      margin-top: 3rem;
     }
 
-    p{
-      font-size:2rem;
+    p {
+      font-size: 2rem;
     }
 
-    .wave {
-      font-size: 80rem;
-      color: #f19c0036;
-      position: absolute;
-      top: 0rem;
-      right: -10rem;
-      z-index: 0;
-    }
-  
+    .wave,
     .storm {
-      font-size: 50rem;
-      color: #f19c0036;
-      position: absolute;
-      bottom: -30rem;
-      left: -5rem;
-      z-index: 0;
+      display: none;
     }
+  }
+
+  @media only screen and (max-width: 550px) {
+    padding: 10rem 5rem;
   }
 `;
 
