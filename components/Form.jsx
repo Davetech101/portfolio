@@ -95,6 +95,7 @@ const Form = () => {
               placeholder="Name"
               id="name"
               onChange={onChange}
+              required
             />
 
             <input
@@ -103,6 +104,7 @@ const Form = () => {
               placeholder="Email"
               id="email"
               onChange={onChange}
+              required
             />
           </div>
 
@@ -119,6 +121,7 @@ const Form = () => {
             className="input"
             placeholder="message"
             onChange={onChange}
+            required
           ></textarea>
 
           <Link
