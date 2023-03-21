@@ -8,7 +8,7 @@ export default function Portfolio() {
   useEffect(() => {
     setTimeout(() => {
       SetLoading(false);
-    }, 1500);
+    }, 2000);
   }, []);
   return (
     <>
