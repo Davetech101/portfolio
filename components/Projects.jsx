@@ -93,21 +93,21 @@ const Projects = () => {
             <div className="images">
               <Image
                 src={project.mobile}
-                alt="Picture of the author"
+                alt={project.mobile}
                 width={200}
                 height={100}
                 className="img1"
               />
               <Image
                 src={project.tablet}
-                alt="Picture of the author"
+                alt={project.tablet}
                 width={400}
                 height={100}
                 className="img2"
               />
               <Image
                 src={project.desktop}
-                alt="Picture of the author"
+                alt={project.desktop}
                 width={300}
                 height={100}
                 className="img3"
