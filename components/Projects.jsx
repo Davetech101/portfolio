@@ -16,7 +16,7 @@ const Projects = () => {
       desktop: "/assets/covT.jpeg",
       tablet: "/assets/covD.jpeg",
       github: "https://github.com/Davetech101/coventry-hotel",
-      link: "",
+      link: "https://coventry-hotel.vercel.app/",
     },
     {
       id: "2",
