@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Loader from "@/components/Loader";
 import Form from "@/components/Form";
 import Section from "@/components/Section";
+import Head from "next/head";
+
 
 export default function Contact() {
   const [loading, SetLoading] = useState(true);
@@ -17,6 +19,9 @@ export default function Contact() {
         <Loader />
       ) : (
         <Section>
+          <Head>
+            <title>David Enomah</title>
+          </Head>
           <Form />
         </Section>
       )}

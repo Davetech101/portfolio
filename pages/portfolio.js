@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Loader from "@/components/Loader";
 import Projects from "@/components/Projects";
+import Head from "next/head";
+
 
 export default function Portfolio() {
   const [loading, SetLoading] = useState(true);
@@ -16,6 +18,9 @@ export default function Portfolio() {
         <Loader />
       ) : (
         <section className="">
+          <Head>
+            <title>David Enomah</title>
+          </Head>
           <Projects />
         </section>
       )}
