@@ -2,8 +2,7 @@ import Link from "next/link";
 import { GrLinkedinOption } from "react-icons/gr";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
-import { TbFileDownload } from "react-icons/tb";
-import { useState } from "react";
+import { AiFillFilePdf } from "react-icons/ai";
 import StyledConnect from "@/styles/styledcomponents/StyledConnect";
 
 const Connect = () => {
@@ -27,7 +26,7 @@ const Connect = () => {
     {
       name: "Download Resume",
       href: "/assets/David Enomah.pdf",
-      svg: <TbFileDownload />,
+      svg: <AiFillFilePdf />,
     },
   ];
 
