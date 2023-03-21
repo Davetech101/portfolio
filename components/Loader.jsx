@@ -81,7 +81,7 @@ const Loader = () => {
   return (
     <Sloader>
       <Head>
-        <title>Loading...</title>
+        <title>David Enomah</title>
       </Head>
       <main>
         <Image
