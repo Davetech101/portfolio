@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
+import AppHead from "./Head";
 
 const Sloader = styled.div`
   position: fixed;
@@ -79,6 +80,7 @@ const Sloader = styled.div`
 const Loader = () => {
   return (
     <Sloader>
+      <AppHead/>
       <main>
         <Image
           src="/assets/dawn.jpeg"

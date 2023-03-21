@@ -18,9 +18,7 @@ export default function Portfolio() {
         <Loader />
       ) : (
         <section className="">
-          <AppHead>
-            <title>David Enomah</title>
-          </AppHead>
+          <AppHead/>
           <Projects />
         </section>
       )}

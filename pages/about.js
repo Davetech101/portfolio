@@ -4,7 +4,6 @@ import AboutMe from "@/components/AboutMe";
 import Section from "@/components/Section";
 import AppHead from "@/components/Head";
 
-
 export default function About() {
   const [loading, SetLoading] = useState(true);
 
@@ -20,9 +19,7 @@ export default function About() {
         <Loader />
       ) : (
         <Section>
-          <AppHead>
-            <title>David Enomah</title>
-          </AppHead>
+          <AppHead />
           <AboutMe />
         </Section>
       )}

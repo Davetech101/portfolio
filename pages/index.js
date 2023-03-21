@@ -19,9 +19,7 @@ export default function Home() {
         <Loader />
       ) : (
         <Section type="home">
-          <AppHead>
-            <title>David Enomah</title>
-          </AppHead>
+          <AppHead />
           <Hero />
         </Section>
       )}
