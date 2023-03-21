@@ -49,8 +49,8 @@ const Projects = () => {
       about:
         "A real estate application where users can register to find and showcase houses for sale or rent.",
       mobile: "/assets/houseM.jpeg",
-      desktop: "/assets/houseT.jpeg",
-      tablet: "/assets/houseD.jpeg ",
+      desktop: "/assets/houseD.jpeg",
+      tablet: "/assets/houseD.jpeg",
       github: "https://github.com/Davetech101/housing-market",
       link: "https://tangerine-starburst-4dce6f.netlify.app/",
     },
