@@ -123,7 +123,7 @@ const Form = () => {
 
           <Link
             className="button"
-            href={`mailto:enomahog@gmamil.com?Subject=${formData.subject}&body=${formData.body}`}
+            href={`mailto:enomahog@gmail.com?Subject=${formData.subject}&body=${formData.body}`}
           >
             Submit
           </Link>
