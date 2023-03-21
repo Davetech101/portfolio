@@ -27,7 +27,7 @@ const Connect = () => {
     },
     {
       name: "Download Resume",
-      href: "",
+      href: "/assets/David Enomah.pdf",
       svg: <TbFileDownload />,
     },
   ];
