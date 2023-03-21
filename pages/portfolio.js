@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Loader from "@/components/Loader";
 import Projects from "@/components/Projects";
-import Head from "next/head";
+import AppHead from "@/components/Head";
 
 
 export default function Portfolio() {
@@ -18,9 +18,9 @@ export default function Portfolio() {
         <Loader />
       ) : (
         <section className="">
-          <Head>
+          <AppHead>
             <title>David Enomah</title>
-          </Head>
+          </AppHead>
           <Projects />
         </section>
       )}

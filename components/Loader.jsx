@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styled from "styled-components";
-import Head from "next/head";
 
 const Sloader = styled.div`
   position: fixed;
@@ -80,9 +79,6 @@ const Sloader = styled.div`
 const Loader = () => {
   return (
     <Sloader>
-      <Head>
-        <title>David Enomah</title>
-      </Head>
       <main>
         <Image
           src="/assets/dawn.jpeg"

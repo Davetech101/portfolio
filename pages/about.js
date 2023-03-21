@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Loader from "@/components/Loader";
 import AboutMe from "@/components/AboutMe";
 import Section from "@/components/Section";
-import Head from "next/head";
+import AppHead from "@/components/Head";
 
 
 export default function About() {
@@ -20,9 +20,9 @@ export default function About() {
         <Loader />
       ) : (
         <Section>
-          <Head>
+          <AppHead>
             <title>David Enomah</title>
-          </Head>
+          </AppHead>
           <AboutMe />
         </Section>
       )}

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Loader from "@/components/Loader";
 import Form from "@/components/Form";
 import Section from "@/components/Section";
-import Head from "next/head";
+import AppHead from "@/components/Head";
 
 
 export default function Contact() {
@@ -19,9 +19,9 @@ export default function Contact() {
         <Loader />
       ) : (
         <Section>
-          <Head>
+          <AppHead>
             <title>David Enomah</title>
-          </Head>
+          </AppHead>
           <Form />
         </Section>
       )}
