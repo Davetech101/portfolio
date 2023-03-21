@@ -7,7 +7,6 @@ import { useState } from "react";
 import StyledConnect from "@/styles/styledcomponents/StyledConnect";
 
 const Connect = () => {
-  const [hover, setHover] = useState(null);
 
   const media = [
     {
