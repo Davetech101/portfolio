@@ -25,7 +25,7 @@ const Connect = () => {
     },
     {
       name: "Download Resume",
-      href: "/assets/David Enomah.pdf",
+      href: "/assets/EnomahDavidResume.pdf",
       svg: <AiFillFilePdf />,
     },
   ];
